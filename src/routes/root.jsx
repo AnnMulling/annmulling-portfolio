@@ -8,6 +8,7 @@ export default function Root() {
     return (
       <>
         <Nav />
+        <MainPage />
         <h1>This is Root</h1>
       </>
     );

@@ -1,7 +1,28 @@
-@import url('../helper/variable.css');
+@import "../helper/variable";
+@import "../helper/mixin";
 
-.location-tag {
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: $base-green;
+
+.location-tag{
+    position: relative;
+    position: fixed;
+    left: 3.33%;
+    width: 6rem;
+    padding: 1rem;
+    background-color: $based-green;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    div {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include font($detail-font, 1rem, $based-white);
+
+    #globe {
+        font-size: 1.5rem;
+    
+    }
+
 }

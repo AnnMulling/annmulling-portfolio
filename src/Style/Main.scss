@@ -1,16 +1,16 @@
-@import url('../style/helper/minxin.css');
-@import url('../style/helper/variable.css');
+@import "./helper/mixin";
+@import "./helper/variable";
 
 
 html {
     box-sizing: border-box;
-    background-color: $base-green;
+    background-color: $based-green;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #ffff;
+    background-color: $based-white;
     padding: 4em;
     margin: 3em;
 
@@ -25,7 +25,8 @@ ul li {
 }
 
 .nav-container {
-    @include font($detail-font, 1rem, $base-green);
+    cursor: pointer;
+    @include font($detail-font, 1rem, $based-green);
 
     ul {
         display: flex;
