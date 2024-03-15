@@ -1,4 +1,47 @@
-@import url("../helper/variable.css");
+/*
+ .italiana-regular {
+     font-family: "Italiana", sans-serif;
+     font-weight: 400;
+    font-style: normal;
+ }
+
+ .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+*/
 .location-tag {
-  width: 0.5rem;
+  position: relative;
+  position: fixed;
+  left: 3.33%;
+  width: 6rem;
+  padding: 1rem;
+  background-color: #39452F;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: white;
+  -webkit-font-family: "Inter";
+  -moz-font-family: "Inter";
+  -ms-font-family: "Inter";
+  -webkit-font-size: 1rem;
+  -moz-font-size: 1rem;
+  -ms-font-size: 1rem;
+  -webkit-color: white;
+  -moz-color: white;
+  -ms-color: white;
+}
+.location-tag div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-tag #globe {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=mainPage.css.map */
