@@ -1,0 +1,36 @@
+/*
+ .italiana-regular {
+     font-family: "Italiana", sans-serif;
+     font-weight: 400;
+    font-style: normal;
+ }
+
+ .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+*/
+
+
+@mixin font($font, $fontSize, $color) {
+    font-family: $font;
+    font-size: $fontSize;
+    color: $color;
+
+    -webkit-font-family: $font;
+    -moz-font-family: $font;
+    -ms-font-family: $font;
+
+    -webkit-font-size: $fontSize;
+    -moz-font-size: $fontSize;
+    -ms-font-size: $fontSize;
+
+    -webkit-color: $color;
+    -moz-color: $color;
+    -ms-color: $color;
+}

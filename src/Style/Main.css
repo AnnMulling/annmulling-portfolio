@@ -1,1 +1,58 @@
-/*# sourceMappingURL=Main.css.map */
+/*
+ .italiana-regular {
+     font-family: "Italiana", sans-serif;
+     font-weight: 400;
+    font-style: normal;
+ }
+
+ .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+*/
+html {
+  box-sizing: border-box;
+  background-color: #39452F;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  padding: 4em;
+  margin: 3em;
+  min-height: 100vh;
+}
+
+/* Nav bar*/
+ul li {
+  list-style-type: none;
+}
+
+.nav-container {
+  font-family: "Inter";
+  font-size: 1rem;
+  color: #39452F;
+  -webkit-font-family: "Inter";
+  -moz-font-family: "Inter";
+  -ms-font-family: "Inter";
+  -webkit-font-size: 1rem;
+  -moz-font-size: 1rem;
+  -ms-font-size: 1rem;
+  -webkit-color: #39452F;
+  -moz-color: #39452F;
+  -ms-color: #39452F;
+}
+.nav-container ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5rem;
+}
+.nav-container ul li {
+  margin: 1rem;
+}/*# sourceMappingURL=Main.css.map */
