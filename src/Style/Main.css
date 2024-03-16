@@ -52,8 +52,24 @@ ul li {
 .nav-container ul {
   display: flex;
   justify-content: flex-end;
-  margin-right: 5rem;
+  align-items: center;
+  margin-right: 3rem;
 }
 .nav-container ul li {
+  display: flex;
+  align-items: stretch;
   margin: 1rem;
+}
+.nav-container ul li .globe {
+  animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    margin-left: -2.75em;
+  }
+  to {
+    margin-left: -1em;
+  }
 }/*# sourceMappingURL=Main.css.map */

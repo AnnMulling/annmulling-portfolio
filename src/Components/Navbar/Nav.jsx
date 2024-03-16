@@ -1,5 +1,8 @@
 
-import '../../style/Main.css'
+
+import { CiGlobe } from "react-icons/ci"
+
+import '../../style/Main.css';
 
 export default function Navbar () {
     return(
@@ -14,6 +17,10 @@ export default function Navbar () {
                     </li>
                     <li>
                         Contact
+                    </li>
+                    <li id="location-tag">
+                         Chicago, IL
+                         <span className="globe"><CiGlobe /></span>
                     </li>
                 </ul>
             </div>
