@@ -13,10 +13,10 @@ body {
     background-color: $based-white;
     padding: 4em;
     margin: 3em;
-
     min-height: 100vh;
 
 }
+
 
 
 /* Nav bar*/
@@ -31,11 +31,31 @@ ul li {
     ul {
         display: flex;
         justify-content: flex-end;
-        margin-right: 5rem;
+        align-items: center;
+        margin-right: 3rem;
 
         li {
+            display: flex;
+            align-items: stretch;
             margin: 1rem;
+
+            .globe {
+                animation: spin 3s linear infinite;
+                -webkit-animation: spin 3s linear infinite;
+            }
         }
+
     }
 
+}
+
+
+
+@keyframes spin {
+    from {
+        margin-left: -2.75em;
+    }
+    to {
+        margin-left: -1em;
+    }
 }
