@@ -1,6 +1,6 @@
 
 
-import { CiGlobe } from "react-icons/ci"
+import { FaLocationDot } from "react-icons/fa6";
 
 import '../../style/Main.css';
 
@@ -20,7 +20,7 @@ export default function Navbar () {
                     </li>
                     <li id="location-tag">
                          Chicago, IL
-                         <span className="globe"><CiGlobe /></span>
+                         <span className="globe"><FaLocationDot /></span>
                     </li>
                 </ul>
             </div>
