@@ -9,7 +9,7 @@ export default function Root() {
       <>
         <Nav />
         <MainPage />
-        <h1>This is Root</h1>
+        <p>A Junior Software Engineer</p>
       </>
     );
   }

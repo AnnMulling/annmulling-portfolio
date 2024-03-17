@@ -11,7 +11,9 @@ export default function MainPage() {
 
     return(
         <>
-           
+           <div className="main-profile-pic">
+                <img src="https://source.unsplash.com/a-close-up-of-a-gray-cats-face-YQlNLVYckRk" alt="profile-pic" />
+           </div>
             <div className="social-tag">
                 <ul className="social-icons">
                     <li><a href="https://github.com/AnnMulling" title="Github" target="_blank"><FaGithub /></a></li>

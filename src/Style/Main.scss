@@ -3,14 +3,19 @@
 
 
 html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
-    background-color: $based-green;
+    background-color: $base-green;
     padding: 0;
     margin: 0;
+    font-family: $detail-font;
 }
 
 body {
-    background-color: $based-white;
+    background-color: $base-white;
     padding: 4em;
     margin: 3em;
     min-height: 100vh;
@@ -26,36 +31,42 @@ ul li {
 
 .nav-container {
     cursor: pointer;
-    @include font($detail-font, 1rem, $based-green);
+    @include font($detail-font, 1rem, $base-green);
 
     ul {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 3rem;
 
         li {
             display: flex;
             align-items: stretch;
-            margin: 1rem;
+            margin-right: 2rem;
 
-            .globe {
-                animation: spin 3s linear infinite;
-                -webkit-animation: spin 3s linear infinite;
-            }
         }
 
     }
 
 }
 
-
+.globe {
+    animation: spin 3s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+}
 
 @keyframes spin {
     from {
-        margin-left: -2.75em;
+      -ms-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
     }
     to {
-        margin-left: -1em;
+      -ms-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      -webkit-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg);
+      transform: rotateY(360deg);
     }
-}
+  }

@@ -15,13 +15,17 @@
 }
 
 */
+.main-profile-pic {
+  margin: 0 auto;
+}
+
 .social-tag ul {
   padding: 0.5rem;
   width: 6rem;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  right: 0%;
+  right: 5%;
   z-index: 199;
   background-color: #39452F;
   border-top-left-radius: 1rem;
