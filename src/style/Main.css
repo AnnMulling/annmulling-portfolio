@@ -32,6 +32,11 @@ body {
   padding: 4em;
   margin: 3em;
   min-height: 100vh;
+  width: 80vw;
+}
+
+.link:focus, .link:hover, .link:visited, .link:link, .link:active {
+  text-decoration: none;
 }
 
 /* Nav bar*/

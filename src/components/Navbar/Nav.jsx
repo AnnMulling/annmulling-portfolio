@@ -1,8 +1,9 @@
 
-
+import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 
 import '../../style/Main.css';
+
 
 export default function Navbar () {
     return(
@@ -10,7 +11,7 @@ export default function Navbar () {
             <div className="nav-container">
                 <ul>
                     <li>
-                        About
+                        <Link to="/aboutme" className="link">About Me</Link>
                     </li>
                     <li>
                         Work
