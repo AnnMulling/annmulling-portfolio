@@ -74,6 +74,7 @@ export default function AboutMe() {
                     <span>Learning</span>
                 </div>
             </div>
+           
         </div>
         </>
     )
