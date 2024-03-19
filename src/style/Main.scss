@@ -19,10 +19,14 @@ body {
     padding: 4em;
     margin: 3em;
     min-height: 100vh;
-
+    width: 80vw;
 }
 
-
+.link {
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+}
 
 /* Nav bar*/
 ul li {

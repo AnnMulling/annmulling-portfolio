@@ -1,0 +1,123 @@
+/*
+ .italiana-regular {
+     font-family: "Italiana", sans-serif;
+     font-weight: 400;
+    font-style: normal;
+ }
+
+ .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+*/
+.about-me-page {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: -moz-max-content;
+  height: max-content;
+  gap: 4rem;
+}
+.about-me-page .about-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+  font-family: "Inter";
+  font-size: 1.2rem;
+  color: #39452F;
+  -webkit-font-family: "Inter";
+  -moz-font-family: "Inter";
+  -ms-font-family: "Inter";
+  -webkit-font-size: 1.2rem;
+  -moz-font-size: 1.2rem;
+  -ms-font-size: 1.2rem;
+  -webkit-color: #39452F;
+  -moz-color: #39452F;
+  -ms-color: #39452F;
+}
+.about-me-page .about-detail h1 {
+  font-family: "Italiana";
+  font-size: 5.5rem;
+  color: #39452F;
+  -webkit-font-family: "Italiana";
+  -moz-font-family: "Italiana";
+  -ms-font-family: "Italiana";
+  -webkit-font-size: 5.5rem;
+  -moz-font-size: 5.5rem;
+  -ms-font-size: 5.5rem;
+  -webkit-color: #39452F;
+  -moz-color: #39452F;
+  -ms-color: #39452F;
+}
+.about-me-page .about-detail p {
+  text-align: justify;
+}
+.about-me-page .about-img {
+  padding-top: 5rem;
+  min-height: 100%;
+  width: 50%;
+}
+.about-me-page .about-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.qualification-box {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.qualification-box .counter-box {
+  margin: 0 10px;
+  width: 12.5rem;
+  padding: 30px 0px;
+  background: #39452F;
+  border-radius: 1rem;
+  line-height: 3;
+}
+.qualification-box .counter-box .counter-detail {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter";
+  font-size: 1.1rem;
+  color: white;
+  -webkit-font-family: "Inter";
+  -moz-font-family: "Inter";
+  -ms-font-family: "Inter";
+  -webkit-font-size: 1.1rem;
+  -moz-font-size: 1.1rem;
+  -ms-font-size: 1.1rem;
+  -webkit-color: white;
+  -moz-color: white;
+  -ms-color: white;
+}
+.qualification-box .counter-box .counter-detail .counter-icon {
+  font-size: 2rem;
+}
+.qualification-box h2 {
+  width: 100%;
+  font-family: "Italiana";
+  font-size: 2rem;
+  color: #39452F;
+  -webkit-font-family: "Italiana";
+  -moz-font-family: "Italiana";
+  -ms-font-family: "Italiana";
+  -webkit-font-size: 2rem;
+  -moz-font-size: 2rem;
+  -ms-font-size: 2rem;
+  -webkit-color: #39452F;
+  -moz-color: #39452F;
+  -ms-color: #39452F;
+}/*# sourceMappingURL=aboutMe.css.map */
