@@ -73,6 +73,7 @@
   text-align: center;
   position: relative;
   width: 100%;
+  padding: 8px;
   margin-top: 4rem;
   display: flex;
   overflow-x: scroll;
