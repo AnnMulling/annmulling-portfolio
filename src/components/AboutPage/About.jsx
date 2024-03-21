@@ -7,6 +7,8 @@ import { MdAutoFixHigh } from "react-icons/md";
 import { LuGlassWater } from "react-icons/lu";
 import { BiWater } from "react-icons/bi";
 
+import { data } from "./data";
+
 import '../../style/components/aboutMe.css';
 import profile from '../../assets/images/profile-girl.jpg'
 
@@ -38,43 +40,15 @@ export default function AboutMe() {
             </div>
         </div>
         <div className="qualification-box">
-            {/* <h2>Qualification</h2> */}
-            <div className="counter-box">
-                <div className="counter-detail">
-                    <span className="counter-icon"><CiTimer /></span>
-                    <span>Time Management</span>
+            {data.map((item) => (
+                <div className="counter-box" id={item.id}>
+                    <div className="counter-detail">
+                        <span className="counter-icon">{<item.icon/>}</span>
+                        <span>{item.title}</span>
+                    </div>
                 </div>
-            </div>
-            <div className="counter-box">
-                <div className="counter-detail">
-                    <span className="counter-icon"><GoLightBulb /></span>
-                    <span>Creativity</span></div>
-                </div>
-            <div className="counter-box">
-                <div className="counter-detail">
-                    <span className="counter-icon"><FaPeopleGroup /></span>
-                    <span>Collaboration</span>
-                </div>
-            </div>
-            <div className="counter-box">
-                <div className="counter-detail">
-                    <span className="counter-icon"><MdAutoFixHigh /></span>
-                    <span>Problem-Solving</span>
-                </div>
-            </div>
-            <div className="counter-box">
-                <div className="counter-detail">
-                    <span className="counter-icon"><BiWater /></span>
-                    <span>Flexibility</span>
-                </div>
-            </div>
-            <div className="counter-box">
-                <div className="counter-detail">
-                    <span className="counter-icon"><LuGlassWater /></span>
-                    <span>Learning</span>
-                </div>
-            </div>
-           
+            ))}
+
         </div>
         </>
     )
