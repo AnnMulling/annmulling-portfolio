@@ -43,7 +43,7 @@ export default function AboutMe() {
             {data.map((item) => (
                 <div className="counter-box" id={item.id}>
                     <div className="counter-detail">
-                        <span className="counter-icon">{<item.icon/>}</span>
+                        <span className="counter-icon"><item.icon/></span>
                         <span>{item.title}</span>
                     </div>
                 </div>

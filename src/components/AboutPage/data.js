@@ -1,45 +1,45 @@
 
-import { CiTimer } from "react-icons/ci";
-import { GoLightBulb } from "react-icons/go";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { MdAutoFixHigh } from "react-icons/md";
-import { LuGlassWater } from "react-icons/lu";
-import { BiWater } from "react-icons/bi";
+import { CiTimer as CiTimerjs } from "react-icons/ci";
+import { GoLightBulb as GoLightBulbjs } from "react-icons/go";
+import { FaPeopleGroup  as FaPeopleGroupjs } from "react-icons/fa6";
+import { MdAutoFixHigh as MdAutoFixHighjs } from "react-icons/md";
+import { LuGlassWater as LuGlassWaterjs } from "react-icons/lu";
+import { BiWater  as BiWaterjs} from "react-icons/bi";
 
 export const data = [
     {
         id: 1,
-        icon: "CiTimer",
+        icon: CiTimerjs,
         title: "Time Management",
 
     },
     {
         id: 2,
-        icon: "GoLightBulb",
+        icon: GoLightBulbjs,
         title: "Creativity",
 
     },
     {
         id: 3,
-        icon: "FaPeopleGroup",
+        icon: FaPeopleGroupjs,
         title: "Collaboration",
 
     },
     {
         id: 4,
-        icon: "MdAutoFixHigh",
+        icon: MdAutoFixHighjs,
         title: "Problem-Solving",
 
     },
     {
         id: 5,
-        icon: "LuGlassWater",
+        icon: LuGlassWaterjs,
         title: "Flexibility",
 
     },
     {
         id: 6,
-        icon: "BiWater",
+        icon: BiWaterjs,
         title: "Learning",
 
     },
