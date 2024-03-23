@@ -70,46 +70,66 @@
 }
 
 .qualification-box {
-  text-align: center;
-  position: relative;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 4rem;
   display: flex;
-  overflow-x: scroll;
+  align-items: center;
+  gap: 10px;
 }
-.qualification-box .counter-box {
+.qualification-box .arrow {
+  font-size: 4rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  opacity: 50%;
+}
+.qualification-box .arrow:hover {
+  opacity: 100%;
+}
+.qualification-box #slide {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  margin: 0 1rem;
+  padding: 1rem;
+  -webkit-scrollbar: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.qualification-box #slide .counter-box {
   margin: 0 10px;
-  background: #39452F;
-  width: 100%;
+  background: white;
   border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  white-space: nowrap;
   line-height: 3;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.qualification-box .counter-box:hover {
+.qualification-box #slide .counter-box:hover {
   transform: scale(1.05);
 }
-.qualification-box .counter-box .counter-detail {
-  padding: 30px 0px;
+.qualification-box #slide .counter-box .counter-detail {
+  width: 200px;
+  padding: 0.5rem;
   text-transform: capitalize;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Inter";
-  font-size: 1.1rem;
-  color: white;
+  font-size: 1rem;
+  color: #39452F;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
-  -webkit-font-size: 1.1rem;
-  -moz-font-size: 1.1rem;
-  -ms-font-size: 1.1rem;
-  -webkit-color: white;
-  -moz-color: white;
-  -ms-color: white;
+  -webkit-font-size: 1rem;
+  -moz-font-size: 1rem;
+  -ms-font-size: 1rem;
+  -webkit-color: #39452F;
+  -moz-color: #39452F;
+  -ms-color: #39452F;
 }
-.qualification-box .counter-box .counter-detail .counter-icon {
+.qualification-box #slide .counter-box .counter-detail .counter-icon {
   font-size: 2rem;
 }
 .qualification-box h2 {
