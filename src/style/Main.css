@@ -37,6 +37,7 @@ body {
 
 .link:focus, .link:hover, .link:visited, .link:link, .link:active {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Nav bar*/
