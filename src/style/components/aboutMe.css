@@ -15,6 +15,36 @@
 }
 
 */
+.nav-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+}
+.nav-btn .dropdown {
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem 2rem;
+  line-height: 1.5rem;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: #39452F;
+  -webkit-font-family: "Inter";
+  -moz-font-family: "Inter";
+  -ms-font-family: "Inter";
+  -webkit-font-size: 1rem;
+  -moz-font-size: 1rem;
+  -ms-font-size: 1rem;
+  -webkit-color: #39452F;
+  -moz-color: #39452F;
+  -ms-color: #39452F;
+}
+.nav-btn .hidden {
+  display: none;
+}
+
 .about-me-page {
   display: flex;
   align-items: stretch;
@@ -59,17 +89,7 @@
 .about-me-page .about-detail p {
   text-align: justify;
 }
-.about-me-page .about-img {
-  padding-top: 5rem;
-  min-height: 100%;
-  width: 50%;
-}
-.about-me-page .about-img img {
-  height: 100%;
-  width: 100%;
-}
-
-.qualification-box {
+.about-me-page .about-detail .qualification-box {
   width: 100%;
   padding: 10px;
   margin-top: 4rem;
@@ -77,26 +97,26 @@
   align-items: center;
   gap: 10px;
 }
-.qualification-box .arrow {
-  font-size: 4rem;
-  margin: 0 1rem;
+.about-me-page .about-detail .qualification-box .arrow {
+  font-size: 10rem;
+  margin: 0 0.5rem;
   cursor: pointer;
   opacity: 50%;
 }
-.qualification-box .arrow:hover {
+.about-me-page .about-detail .qualification-box .arrow:hover {
   opacity: 100%;
 }
-.qualification-box #slide {
+.about-me-page .about-detail .qualification-box #slide {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
   margin: 0 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   -webkit-scrollbar: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.qualification-box #slide .counter-box {
+.about-me-page .about-detail .qualification-box #slide .counter-box {
   margin: 0 10px;
   background: white;
   border-radius: 10px;
@@ -106,10 +126,11 @@
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.qualification-box #slide .counter-box:hover {
+.about-me-page .about-detail .qualification-box #slide .counter-box:hover {
   transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.qualification-box #slide .counter-box .counter-detail {
+.about-me-page .about-detail .qualification-box #slide .counter-box .counter-detail {
   width: 200px;
   padding: 0.5rem;
   text-transform: capitalize;
@@ -129,10 +150,10 @@
   -moz-color: #39452F;
   -ms-color: #39452F;
 }
-.qualification-box #slide .counter-box .counter-detail .counter-icon {
+.about-me-page .about-detail .qualification-box #slide .counter-box .counter-detail .counter-icon {
   font-size: 2rem;
 }
-.qualification-box h2 {
+.about-me-page .about-detail .qualification-box h2 {
   width: 100%;
   font-family: "Italiana";
   font-size: 2rem;
@@ -146,4 +167,15 @@
   -webkit-color: #39452F;
   -moz-color: #39452F;
   -ms-color: #39452F;
+}
+.about-me-page .about-img {
+  padding-top: 5rem;
+  height: 100%;
+  width: 50%;
+}
+.about-me-page .about-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }/*# sourceMappingURL=aboutMe.css.map */
