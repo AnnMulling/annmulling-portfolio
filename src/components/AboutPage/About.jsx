@@ -1,11 +1,6 @@
 
 //icons
-import { CiTimer } from "react-icons/ci";
-import { GoLightBulb } from "react-icons/go";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { MdAutoFixHigh } from "react-icons/md";
-import { LuGlassWater } from "react-icons/lu";
-import { BiWater } from "react-icons/bi";
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 import { data } from "./data";
 
@@ -13,6 +8,17 @@ import '../../style/components/aboutMe.css';
 import profile from '../../assets/images/profile-girl.jpg'
 
 export default function AboutMe() {
+
+    const slideLeft = () => {
+        let slider = document.getElementById('slide');
+        slider.scrollLeft = slider.scrollLeft - 150;
+      };
+
+      const slideRight = () => {
+        let slider = document.getElementById('slide');
+        slider.scrollLeft = slider.scrollLeft + 150;
+      };
+
     return (
         <>
         <div className="about-me-page">
@@ -40,15 +46,18 @@ export default function AboutMe() {
             </div>
         </div>
         <div className="qualification-box">
-            {data.map((item) => (
-                <div className="counter-box" id={item.id}>
-                    <div className="counter-detail">
-                        <span className="counter-icon"><item.icon/></span>
-                        <span>{item.title}</span>
+                <MdChevronLeft className="arrow" onClick={slideLeft} />
+            <div id="slide">
+                    {data.map((item) => (
+                    <div className="counter-box" id={item.id}>
+                        <div className="counter-detail">
+                            <span className="counter-icon"><item.icon/></span>
+                            <span>{item.title}</span>
+                        </div>
                     </div>
-                </div>
-            ))}
-
+                    ))}
+            </div>
+                <MdChevronRight className="arrow" onClick={slideRight} />
         </div>
         </>
     )
