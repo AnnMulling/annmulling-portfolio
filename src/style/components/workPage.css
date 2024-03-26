@@ -1,0 +1,88 @@
+/*
+ .italiana-regular {
+     font-family: "Italiana", sans-serif;
+     font-weight: 400;
+    font-style: normal;
+ }
+
+ .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+*/
+.work-main-container {
+  display: flex;
+  justify-content: space-between;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  margin-top: 5rem;
+}
+.work-main-container .categories ul {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+.work-main-container .views {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.work-content {
+  width: 100%;
+}
+.work-content .list-view div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 40px;
+  font-weight: 400;
+}
+.work-content .list-view ul {
+  line-height: 2rem;
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: #39452F;
+  -webkit-font-family: "Inter";
+  -moz-font-family: "Inter";
+  -ms-font-family: "Inter";
+  -webkit-font-size: 1rem;
+  -moz-font-size: 1rem;
+  -ms-font-size: 1rem;
+  -webkit-color: #39452F;
+  -moz-color: #39452F;
+  -ms-color: #39452F;
+}
+.work-content .list-view ul li:nth-child(1n+2) {
+  display: flex;
+  justify-content: space-between;
+  transition: all 300ms ease-in-out;
+  opacity: 60%;
+}
+.work-content .list-view ul li:nth-child(1n+2):hover {
+  border-bottom: 0.5px solid grey;
+  transform: scale(1.05);
+  opacity: 100%;
+}
+.work-content .grid-view ul {
+  display: flex;
+  justify-content: space-around;
+}
+.work-content .grid-view ul li {
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.work-content .grid-view ul li:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=workPage.css.map */

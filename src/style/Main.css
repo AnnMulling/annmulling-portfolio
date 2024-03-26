@@ -27,7 +27,7 @@ html {
   font-family: "Inter";
 }
 
-body {
+#root {
   background-color: white;
   padding: 4em;
   margin: 3em;
