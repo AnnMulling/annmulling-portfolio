@@ -1,17 +1,16 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-//icons
+
+import DropDown from '../Navbar/Dropdown';
+
+//icons & imgs
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import { IoMenu } from "react-icons/io5";
-
-import { data } from "./data";
-
-import '../../style/components/aboutMe.css';
 import profile from '../../assets/images/profile-girl.jpg'
 
-export default function AboutMe() {
-    const [showMenu, setShowmenu] = useState(false);
+//css & other
+import { data } from "./data";
+import '../../style/components/aboutMe.css';
+import SocialTag from '../Navbar/SocialTag';
 
+export default function AboutMe() {
 
     const slideLeft = () => {
         let slider = document.getElementById('slide');
@@ -22,34 +21,13 @@ export default function AboutMe() {
         let slider = document.getElementById('slide');
         slider.scrollLeft = slider.scrollLeft + 175;
     };
-    const dropDown = (e) => {
-        e.preventDefault();
-        setShowmenu(!showMenu);
-    };
-
-    const ulClassName = showMenu ? "dropdown" : "hidden";
 
     return (
         <>
-            <div className="nav-btn">
-                <IoMenu
-                    onClick={dropDown}
-                />
-                <div className="drop-down-menu">
-                    <ul className={ulClassName}>
-                        <li>
-                            <Link to="/" className="link">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/" className="link">Work</Link>
-                        </li>
-                        <li>
-                            <Link to="/" className="link">Contact</Link>
-                        </li>
-                    </ul>
+            <DropDown />
 
-                </div>
-            </div>
+            <SocialTag />
+
             <div className="about-me-page">
                 <div className="about-img">
                     <img src={profile} alt='profile-img' />
@@ -67,9 +45,9 @@ export default function AboutMe() {
                             In my free time, I find joy in the art of baking🧁,
                             experimenting with flavors and textures to create delicious treats that bring joy to others.
                         </p>
-                    </p>
-                    <p> "Full stack software engineering provides the perfect canvas for me to express creativity
-                        in both logical and visual ways, and I love every bit of it"
+                        <p> "Full stack software engineering provides the perfect canvas for me to express creativity
+                            in both logical and visual ways, and I love every bit of it"
+                        </p>
                     </p>
 
                     <div className="qualification-box">

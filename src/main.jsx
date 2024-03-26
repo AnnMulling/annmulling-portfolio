@@ -8,6 +8,7 @@ import {
 import Root from './routes/root.jsx';
 import ErrorPage from './routes/error-page.jsx';
 import AboutMe from './components/AboutPage/About.jsx';
+import Work from './components/ProjectPage/Project.jsx';
 
 import './style/Main.css'
 
@@ -16,11 +17,16 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-  
+
   },
   {
     path: "/aboutme",
     element: <AboutMe/>,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/work",
+    element: <Work />,
     errorElement: <ErrorPage />
   }
 ]);
