@@ -30,28 +30,48 @@
 
     .list-view {
 
-        div {
+        .list-view-titles {
             display: flex;
             justify-content: space-between;
-            margin: 10px 40px;
-            font-weight: 400;
+            margin: 20px 40px;
+            font-weight: 500;
         }
 
         ul {
             // margin: 0 auto;
-            line-height: 2rem;
+            line-height: 1rem;
             cursor: pointer;
             @include font($detail-font, 1rem, $base-green);
 
-            li:nth-child(1n+2) {
+            li {
                 display: flex;
                 justify-content: space-between;
                 transition: all 300ms ease-in-out;
+                padding: .5rem 3rem .5rem 0rem;
                 opacity: 60%;
                 &:hover {
                     border-bottom: 0.5px solid grey;
                     transform: scale(1.05);
                     opacity: 100%;
+                }
+
+                .project-content {
+                    display: flex;
+                    gap: 10px;
+
+                    .url-block {
+                        font-size: 1.5rem;
+                        &:hover {
+                            color: rgba(247, 138, 5, 0.886);
+                        }
+                    }
+                    .tools-block, .url-block {
+                        font-size: 1.5rem;
+                        transition: all linear 120ms;
+                        &:hover {
+                            color: rgba(22, 182, 245, 0.886);
+                        }
+                    }
                 }
             }
         }
