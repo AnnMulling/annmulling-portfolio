@@ -25,7 +25,7 @@ html {
     width: 80vw;
 }
 
-.link {
+.link, a {
     &:focus, &:hover, &:visited, &:link, &:active {
         text-decoration: none;
         color: inherit;

@@ -39,14 +39,14 @@
 .work-content {
   width: 100%;
 }
-.work-content .list-view div {
+.work-content .list-view .list-view-titles {
   display: flex;
   justify-content: space-between;
-  margin: 10px 40px;
-  font-weight: 400;
+  margin: 20px 40px;
+  font-weight: 500;
 }
 .work-content .list-view ul {
-  line-height: 2rem;
+  line-height: 1rem;
   cursor: pointer;
   font-family: "Inter";
   font-size: 1rem;
@@ -61,16 +61,34 @@
   -moz-color: #39452F;
   -ms-color: #39452F;
 }
-.work-content .list-view ul li:nth-child(1n+2) {
+.work-content .list-view ul li {
   display: flex;
   justify-content: space-between;
   transition: all 300ms ease-in-out;
+  padding: 0.5rem 3rem 0.5rem 0rem;
   opacity: 60%;
 }
-.work-content .list-view ul li:nth-child(1n+2):hover {
+.work-content .list-view ul li:hover {
   border-bottom: 0.5px solid grey;
   transform: scale(1.05);
   opacity: 100%;
+}
+.work-content .list-view ul li .project-content {
+  display: flex;
+  gap: 10px;
+}
+.work-content .list-view ul li .project-content .url-block {
+  font-size: 1.5rem;
+}
+.work-content .list-view ul li .project-content .url-block:hover {
+  color: rgba(247, 138, 5, 0.886);
+}
+.work-content .list-view ul li .project-content .tools-block, .work-content .list-view ul li .project-content .url-block {
+  font-size: 1.5rem;
+  transition: all linear 120ms;
+}
+.work-content .list-view ul li .project-content .tools-block:hover, .work-content .list-view ul li .project-content .url-block:hover {
+  color: rgba(22, 182, 245, 0.886);
 }
 .work-content .grid-view ul {
   display: flex;
