@@ -29,7 +29,7 @@ export default function DropDown() {
                             <Link to="/" className="link">Home</Link>
                         </li>
                         <li>
-                            <Link to="/about" className="link">About</Link>
+                            <Link to="/aboutme" className="link">About</Link>
                         </li>
                         <li>
                             <Link to="/work" className="link">Work</Link>

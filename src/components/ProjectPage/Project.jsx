@@ -16,6 +16,7 @@ import { projects } from "./dataProject";
 export default function Work() {
     const [gridView, setGridView] = useState(false);
     const [listView, setListView] = useState(true);
+    const [showDetail, setShowDetail] = useState(false);
 
     const setGrid = () => {
         setGridView(true)
@@ -25,6 +26,14 @@ export default function Work() {
         setGridView(false)
         setListView(true)
     };
+
+    const handleHover = (e) => {
+        e.preventDefault();
+        console.log(showDetail)
+        setShowDetail(!showDetail)
+    };
+
+    const detailClass = showDetail ? "thumb-inner" : "hidden";
 
     return (
         <>
@@ -49,10 +58,20 @@ export default function Work() {
                 {gridView &&
                     <div className="grid-view">
                         {projects.map((project) => (
-                            <ul id={project.id}>
+                            <ul >
+                                <li key={project.id} onMouseEnter={handleHover} >
+                                    <div style={{fontWeight:"bold"}}>{project.name}</div>
+                                    <div className="project-item" >
+                                        <a href={project.url[1].url} target="_blank">
+                                            <div className="thumb">
+                                                <img src={project.img} alt="project" />
+                                            </div>
+                                            <div  className={detailClass} >
+                                                <p>{project.description}</p>
+                                            </div>
+                                        </a>
+                                    </div>
 
-                                <li>
-                                    {project.name}
                                 </li>
 
                             </ul>

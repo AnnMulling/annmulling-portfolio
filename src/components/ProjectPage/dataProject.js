@@ -8,6 +8,12 @@ import { TbSql as TbSqljs } from "react-icons/tb";
 import { FaGithub as FaGithubjs } from "react-icons/fa";
 import { MdWeb as MdWebjs } from "react-icons/md";
 
+//imgs
+import annbnb from '../../assets/images/projects/AnnBnb.png';
+import cultivate from '../../assets/images/projects/Cultivate.png';
+import sketchy from '../../assets/images/projects/Sketchy.png';
+
+
 export const projects = [
     {
         id: 1,
@@ -24,8 +30,8 @@ export const projects = [
                 url: "https://cultivate-project.onrender.com",
             }
         ],
-        img: "img",
-        description: "description",
+        img: cultivate,
+        description: " Full-Stack clone of Trello website with extended functionalities feature inspired by the Forest application.",
         techStack: [
             {
                 id: 1,
@@ -66,8 +72,8 @@ export const projects = [
                 url: "https://api-aribnb-project.onrender.com",
             }
         ],
-        img: "img",
-        description: "description",
+        img: annbnb,
+        description: "Full-Stack Clone of Airbnb with core  CRUD features",
         techStack: [
             {
              id: 1,
@@ -107,8 +113,8 @@ export const projects = [
                 url: "https://sketchy-v2.onrender.com",
             }
         ],
-        img: "img",
-        description: "description",
+        img: sketchy,
+        description: "Full-Stack clone/inspired by Etsy website.",
         techStack: [
             {
              id: 1,
