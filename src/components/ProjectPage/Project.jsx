@@ -27,11 +27,16 @@ export default function Work() {
         setListView(true)
     };
 
-    const handleHover = (e) => {
+    const handleHover = (e, id) => {
         e.preventDefault();
-        console.log(showDetail)
-        setShowDetail(!showDetail)
-    };
+        // const detailShow = {display: true}
+        console.log(e.type)
+
+        if (e.type == 'mouseenter' && id == projects[id]) {
+            setShowDetail(!showDetail)
+        }
+
+    }
 
     const detailClass = showDetail ? "thumb-inner" : "hidden";
 
@@ -58,18 +63,20 @@ export default function Work() {
                 {gridView &&
                     <div className="grid-view">
                         {projects.map((project) => (
-                            <ul >
-                                <li key={project.id} onMouseEnter={handleHover} >
+                            <ul>
+                                <li key={project.id}
+                                    onMouseEnter={(e) => handleHover(e, project.id)}
+                                >
                                     <div style={{fontWeight:"bold"}}>{project.name}</div>
                                     <div className="project-item" >
                                         <a href={project.url[1].url} target="_blank">
                                             <div className="thumb">
                                                 <img src={project.img} alt="project" />
                                             </div>
-                                            <div  className={detailClass} >
-                                                <p>{project.description}</p>
-                                            </div>
                                         </a>
+                                    </div>
+                                    <div className={detailClass} >
+                                        <p>{project.description}</p>
                                     </div>
 
                                 </li>
