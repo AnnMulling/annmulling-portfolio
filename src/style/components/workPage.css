@@ -77,18 +77,12 @@
   display: flex;
   gap: 10px;
 }
-.work-content .list-view ul li .project-content .url-block {
-  font-size: 1.5rem;
-}
-.work-content .list-view ul li .project-content .url-block:hover {
-  color: rgba(247, 138, 5, 0.886);
-}
-.work-content .list-view ul li .project-content .tools-block, .work-content .list-view ul li .project-content .url-block {
+.work-content .tools-block, .work-content .url-block {
   font-size: 1.5rem;
   transition: all linear 120ms;
 }
-.work-content .list-view ul li .project-content .tools-block:hover, .work-content .list-view ul li .project-content .url-block:hover {
-  color: rgba(22, 182, 245, 0.886);
+.work-content .tools-block:hover, .work-content .url-block:hover {
+  color: rgba(247, 138, 5, 0.886);
 }
 .work-content .grid-view {
   display: flex;
@@ -110,16 +104,32 @@
 .work-content .grid-view ul li .project-item {
   width: 300px;
   height: 300px;
+  cursor: pointer;
 }
 .work-content .grid-view ul li .project-item .thumb-inner {
-  position: relative;
+  position: absolute;
   z-index: 99;
-  bottom: 0;
-  text-align: left;
-  background-color: rgba(24, 109, 255, 0.25);
-  width: 100%;
+  text-align: center;
+  width: 95%;
   height: 60px;
+  bottom: 0%;
+  padding: 10px;
+  right: 0%;
   transition: all 0.4s ease;
+}
+.work-content .grid-view ul li .project-item .thumb-inner p {
+  visibility: hidden;
+}
+.work-content .grid-view ul li .project-item .thumb-inner:hover {
+  border-radius: 10px;
+  height: 60%;
+  background-color: rgba(198, 201, 204, 0.788);
+}
+.work-content .grid-view ul li .project-item .thumb-inner:hover p {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  color: #191919;
 }
 .work-content .grid-view ul li .project-item .thumb img {
   width: 100%;

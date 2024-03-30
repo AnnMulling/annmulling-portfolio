@@ -58,25 +58,18 @@
                 .project-content {
                     display: flex;
                     gap: 10px;
-
-                    .url-block {
-                        font-size: 1.5rem;
-                        &:hover {
-                            color: rgba(247, 138, 5, 0.886);
-                        }
-                    }
-                    .tools-block, .url-block {
-                        font-size: 1.5rem;
-                        transition: all linear 120ms;
-                        &:hover {
-                            color: rgba(22, 182, 245, 0.886);
-                        }
-                    }
                 }
             }
         }
     }
 
+    .tools-block, .url-block {
+        font-size: 1.5rem;
+        transition: all linear 120ms;
+        &:hover {
+            color: rgba(247, 138, 5, 0.886);
+        }
+    }
     .grid-view {
         display: flex;
         justify-content: space-around;
@@ -97,18 +90,39 @@
                 .project-item {
                     width: 300px;
                     height: 300px;
+                    cursor: pointer;
 
                     .thumb-inner {
-                        position: relative;
+                        position: absolute;
                         z-index: 99;
-                        bottom: 0;
-                        text-align: left;
-                        background-color: rgba(24, 109, 255, 0.25);
-                        width: 100%;
+                        text-align: center;
+                        width: 95%;
                         height: 60px;
-
-                        -webkit-transition: all 0.4s ease;
+                        bottom: 0%;
+                        padding: 10px;
+                        right: 0%;
+                        -webkit-transition: all 0.4s ease ;
                         transition: all 0.4s ease;
+
+
+                        p {
+                            visibility: hidden;
+                        }
+
+                        &:hover {
+                            border-radius: 10px;
+                            height: 60%;
+                            background-color: rgba(198, 201, 204, 0.788);
+                            // background-color: rgba(24, 109, 255, 0.25);
+                            p {
+                                 position: relative;
+                                 opacity: 1;
+                                 visibility: visible;
+                                 color: #191919;
+
+                            }
+                        }
+
                     }
 
                     .thumb {
@@ -117,6 +131,7 @@
                             height: 100%;
                         }
                     }
+
                 }
             }
         }
