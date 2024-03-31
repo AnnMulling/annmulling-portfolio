@@ -76,6 +76,7 @@
         ul {
 
             li {
+
                 font-weight: 400;
                 padding: 1.5rem;
                 background: $base-white;
@@ -83,57 +84,72 @@
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
                 cursor: pointer;
                 transition: all 300ms ease-in-out;
+
                 &:hover {
                     transform: scale(1.05);
                     cursor: pointer;
                 }
-                .project-item {
-                    width: 300px;
-                    height: 300px;
-                    cursor: pointer;
+
+            }
+            .project-item {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                cursor: pointer;
+
+                .thumb-inner {
+                    visibility: hidden;
+                }
+                &:hover {
 
                     .thumb-inner {
+                        visibility: visible;
                         position: absolute;
                         z-index: 99;
                         text-align: center;
                         width: 95%;
                         height: 60px;
-                        bottom: 0%;
+                        bottom: 2%;
                         padding: 10px;
                         right: 0%;
-                        -webkit-transition: all 0.4s ease ;
-                        transition: all 0.4s ease;
-
+                        -webkit-transition: all 0.5s ease ;
+                        transition: all 0.5s ease;
 
                         p {
                             visibility: hidden;
+
                         }
 
                         &:hover {
                             border-radius: 10px;
-                            height: 60%;
-                            background-color: rgba(198, 201, 204, 0.788);
-                            // background-color: rgba(24, 109, 255, 0.25);
+                            height: 100%;
+                            background-color: rgba(234, 233, 233, 0.855);
                             p {
+                                visibility: visible;
                                  position: relative;
                                  opacity: 1;
-                                 visibility: visible;
                                  color: #191919;
 
                             }
                         }
 
                     }
+                }
 
-                    .thumb {
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
+                .thumb {
+                    img {
+                        width: 100%;
+                        height: 100%;
                     }
-
                 }
             }
+
+        }
+        .tools-block-grid {
+            font-size: 1.5rem;
+        &:hover {
+            color: rgba(247, 138, 5, 0.886);
+        }
         }
     }
 

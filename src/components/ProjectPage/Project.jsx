@@ -59,24 +59,31 @@ export default function Work() {
                                             <div className="thumb">
                                                 <img src={project.img} alt="project" />
                                             </div>
-                                        <div className="thumb-inner" >
-                                                <p>{project.description}</p>
+                                            <div className="thumb-inner" >
 
                                                 <p>
-                                                    {project.techStack.map((tool) => (
-                                                        <span className="tools-block" key={tool.id}><tool.name/></span>
-                                                    ))}
+                                                    {project.description}
+
                                                 </p>
                                                 <p>
+                                                    {project.techStack.map((tool) => (
+                                                        <span className="tools-block-grid" key={tool.id}><tool.name/></span>
+                                                    ))}
+                                                </p>
+                                                <p >
                                                     {project.url.map((url) => (
-                                                        <span className="url-block" key={url.id}>
+                                                        <span  className="tools-block-grid" key={url.id}>
                                                             <a href={url.url} target="_blank"><span><url.icon/></span></a>
                                                         </span>
                                                     ))}
                                                 </p>
-                                        </div>
+
+
+                                            </div>
                                         </a>
+
                                     </div>
+
                                 </li>
 
                             </ul>
