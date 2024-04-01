@@ -1,4 +1,6 @@
 
+//css & other
+import '../../../style/components/workPage.css';
 
 export default function DesGrid ({ projects }) {
     const filteredDes = projects.filter((project) => project.development === false);

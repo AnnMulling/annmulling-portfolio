@@ -6,8 +6,8 @@ import { TfiLayoutMenuV } from "react-icons/tfi";
 
 //css & other
 import DropDown from "../../Navbar/Dropdown";
-import DevList from "./DevGrid";
-import DevGrid from "./DevList";
+import DevGrid from "./DevGrid";
+import DevList from "./DevList";
 
 export default function DesignProjects({ filterDesign, filterDev, showAll, setGrid, setList, projects, gridView, listView }) {
     return (
@@ -27,10 +27,10 @@ export default function DesignProjects({ filterDesign, filterDev, showAll, setGr
                 </div>
             </div>
             <div className="work-content">
-                {gridView && <DevGrid projects={projects} />}
-                {listView && <DevList projects={projects} />}
+                {gridView && <DevGrid projects={projects}/>}
+                {listView && <DevList projects={projects}/>}
             </div>
-            <h1> All Dev Projects</h1>
+
         </>
     )
 }
