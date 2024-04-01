@@ -21,12 +21,13 @@
   position: absolute;
   z-index: 100;
   right: 10%;
+  color: #F6F6F6;
 }
 .nav-btn .dropdown {
-  position: fixed;
-  top: 18%;
+  position: absolute;
+  top: 100%;
   right: 10%;
-  background: white;
+  background: #F6F6F6;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   width: -moz-max-content;
@@ -35,16 +36,16 @@
   line-height: 1.5rem;
   font-family: "Inter";
   font-size: 1rem;
-  color: #161616;
+  color: #464646;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
-  -webkit-color: #161616;
-  -moz-color: #161616;
-  -ms-color: #161616;
+  -webkit-color: #464646;
+  -moz-color: #464646;
+  -ms-color: #464646;
 }
 .nav-btn .hidden {
   display: none;
@@ -56,11 +57,16 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  right: 5%;
+  right: 5.5%;
   z-index: 199;
-  background-color: #161616;
+  background-color: #464646;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  opacity: 50%;
+  transition: all linear 180ms;
+}
+.social-tag ul:hover {
+  opacity: 100%;
 }
 .social-tag ul li {
   display: block;
@@ -69,18 +75,25 @@
   padding-left: 15px;
 }
 .social-tag ul li a {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   font-family: "Inter";
   font-size: 1.5rem;
-  color: white;
+  color: #F6F6F6;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
   -webkit-font-size: 1.5rem;
   -moz-font-size: 1.5rem;
   -ms-font-size: 1.5rem;
-  -webkit-color: white;
-  -moz-color: white;
-  -ms-color: white;
+  -webkit-color: #F6F6F6;
+  -moz-color: #F6F6F6;
+  -ms-color: #F6F6F6;
+  opacity: 60%;
+  transition: all linear 120ms;
+}
+.social-tag ul li a:hover {
+  opacity: 100%;
+  color: #C3773D;
 }/*# sourceMappingURL=nav.css.map */

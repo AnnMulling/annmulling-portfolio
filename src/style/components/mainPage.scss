@@ -4,14 +4,15 @@
 
 .main-profile-pic {
     // margin: 0 auto;
-    margin-left: 2.5rem;
+    background-image: url("https://source.unsplash.com/a-close-up-of-a-gray-cats-face-YQlNLVYckRk");
+    background-size: cover;
+    margin-left: 1rem;
     position: relative;
     overflow: hidden;
     .carousel {
-        // overflow: hidden;
-        position: absolute;
+        position: relative;
         z-index: 100;
-        height: 100%;
+        text-shadow: 2px 2px 3px $base-green;
         padding-top: 55%;
         /*start the text far right*/
         -moz-transform: translateX(100%);
@@ -21,7 +22,7 @@
         animation: carousel, 15s, linear, infinite;
         -moz-animation: carousel 15s linear infinite;
         -webkit-animation: carousel 15s linear infinite;
-        @include font($title-font, 4rem, $base-white);
+        @include font($title-font, 3rem, $base-white);
 
     }
 }
