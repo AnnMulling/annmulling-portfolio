@@ -14,9 +14,10 @@ export default function MainPage() {
                     <span>Ann Mulling </span>
                     <span>Ann Mulling </span>
                 </div>
-                <img src="https://source.unsplash.com/a-close-up-of-a-gray-cats-face-YQlNLVYckRk" alt="profile-pic" />
+                {/* <img src="https://source.unsplash.com/a-close-up-of-a-gray-cats-face-YQlNLVYckRk" alt="profile-pic" /> */}
            </div>
             <SocialTag />
         </>
+
     )
 }

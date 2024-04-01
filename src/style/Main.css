@@ -21,14 +21,16 @@ html {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background-color: #39452F;
+  background-color: #464646;
   padding: 0;
   margin: 0;
   font-family: "Inter";
 }
 
 #root {
-  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #201f1f;
+  border-radius: 1rem;
   padding: 4em;
   margin: 3em;
   min-height: 100vh;
@@ -49,16 +51,16 @@ ul li {
   cursor: pointer;
   font-family: "Inter";
   font-size: 1rem;
-  color: #39452F;
+  color: #F6F6F6;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
-  -webkit-color: #39452F;
-  -moz-color: #39452F;
-  -ms-color: #39452F;
+  -webkit-color: #F6F6F6;
+  -moz-color: #F6F6F6;
+  -ms-color: #F6F6F6;
 }
 .nav-container ul {
   display: flex;

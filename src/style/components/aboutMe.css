@@ -32,30 +32,30 @@
   margin-right: 1rem;
   font-family: "Inter";
   font-size: 1.2rem;
-  color: #39452F;
+  color: #9D9D9D;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
   -webkit-font-size: 1.2rem;
   -moz-font-size: 1.2rem;
   -ms-font-size: 1.2rem;
-  -webkit-color: #39452F;
-  -moz-color: #39452F;
-  -ms-color: #39452F;
+  -webkit-color: #9D9D9D;
+  -moz-color: #9D9D9D;
+  -ms-color: #9D9D9D;
 }
 .about-me-page .about-detail h1 {
   font-family: "Italiana";
   font-size: 5.5rem;
-  color: #39452F;
+  color: #F6F6F6;
   -webkit-font-family: "Italiana";
   -moz-font-family: "Italiana";
   -ms-font-family: "Italiana";
   -webkit-font-size: 5.5rem;
   -moz-font-size: 5.5rem;
   -ms-font-size: 5.5rem;
-  -webkit-color: #39452F;
-  -moz-color: #39452F;
-  -ms-color: #39452F;
+  -webkit-color: #F6F6F6;
+  -moz-color: #F6F6F6;
+  -ms-color: #F6F6F6;
 }
 .about-me-page .about-detail p {
   text-align: justify;
@@ -89,7 +89,7 @@
 }
 .about-me-page .about-detail .qualification-box #slide .counter-box {
   margin: 0 10px;
-  background: white;
+  background: #fff;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   white-space: nowrap;
@@ -110,16 +110,16 @@
   align-items: center;
   font-family: "Inter";
   font-size: 1rem;
-  color: #39452F;
+  color: #464646;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
-  -webkit-color: #39452F;
-  -moz-color: #39452F;
-  -ms-color: #39452F;
+  -webkit-color: #464646;
+  -moz-color: #464646;
+  -ms-color: #464646;
 }
 .about-me-page .about-detail .qualification-box #slide .counter-box .counter-detail .counter-icon {
   font-size: 2rem;
@@ -128,22 +128,21 @@
   width: 100%;
   font-family: "Italiana";
   font-size: 2rem;
-  color: #39452F;
+  color: #464646;
   -webkit-font-family: "Italiana";
   -moz-font-family: "Italiana";
   -ms-font-family: "Italiana";
   -webkit-font-size: 2rem;
   -moz-font-size: 2rem;
   -ms-font-size: 2rem;
-  -webkit-color: #39452F;
-  -moz-color: #39452F;
-  -ms-color: #39452F;
+  -webkit-color: #464646;
+  -moz-color: #464646;
+  -ms-color: #464646;
 }
 .about-me-page .about-img {
   margin-top: 5rem;
   height: 100%;
   width: 50%;
-  background: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   padding: 1rem;
   transform: rotate(-2.5deg);

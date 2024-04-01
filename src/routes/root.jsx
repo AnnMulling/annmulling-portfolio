@@ -9,7 +9,6 @@ export default function Root() {
       <>
         <Nav />
         <MainPage />
-        <p>A Junior Software Engineer</p>
       </>
     );
   }

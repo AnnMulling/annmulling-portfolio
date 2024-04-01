@@ -17,8 +17,9 @@ html {
 }
 
 #root {
-
-    background-color: $base-white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: $base-black;
+    border-radius: 1rem;
     padding: 4em;
     margin: 3em;
     min-height: 100vh;
@@ -39,7 +40,7 @@ ul li {
 
 .nav-container {
     cursor: pointer;
-    @include font($detail-font, 1rem, $base-green);
+    @include font($detail-font, 1rem, $base-white);
 
     ul {
         display: flex;
