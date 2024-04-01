@@ -3,7 +3,7 @@
 import '../../style/components/workPage.css';
 
 
-export default function ({ projects }) {
+export default function GridView ({ projects }) {
     return (
         <div className="grid-view">
             {projects.map((project) => (
