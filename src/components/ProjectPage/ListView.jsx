@@ -3,7 +3,7 @@
 import '../../style/components/workPage.css';
 
 
-export default function ({ projects }) {
+export default function ListView ({ projects }) {
     return (
         <div className="list-view">
             <div className="list-view-titles">

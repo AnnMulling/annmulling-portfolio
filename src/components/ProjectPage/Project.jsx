@@ -21,6 +21,7 @@ export default function Work() {
     const [listView, setListView] = useState(true);
     const [design, setDesign] = useState(false);
     const [dev, setDev] = useState(false);
+    const [all, setAll] = useState(true);
 
 
     const setGrid = () => {
@@ -35,10 +36,18 @@ export default function Work() {
     const filterDesign = () => {
         setDesign(true)
         setDev(false)
+        setAll(false)
     };
     const filterDev = () => {
         setDesign(false)
         setDev(true)
+        setAll(false)
+    };
+
+    const showAll = () => {
+        setDesign(false)
+        setDev(false)
+        setAll(true)
     };
 
 
@@ -46,37 +55,53 @@ export default function Work() {
         <>
             <DropDown />
             <SocialTag />
-            {design ? <DesignProjects filterDesign={filterDesign} filterDev={filterDev} projects={projects} />
-            : dev ? <DevProjects filterDesign={filterDesign} filterDev={filterDev} projects={projects} /> :
-                <>
-                    <div className="work-main-container">
-                        <div className="categories">
-                            <ul>
-                                <li>All</li>
-                                <li onClick={filterDesign}>
-                                    Design
-                                </li>
-                                <li onClick={filterDev}>
-                                    Development
-                                </li>
-                            </ul>
+            { design ?
+                <DesignProjects
+                filterDesign={filterDesign}
+                filterDev={filterDev}
+                showAll={showAll}
+                setGrid={setGrid}
+                setList={setList}
+                projects={projects}
+                gridView={gridView}
+                listView={listView}
+                />
+            : dev &&
+                <DevProjects
+                filterDesign={filterDesign}
+                filterDev={filterDev}
+                showAll={showAll}
+                setGrid={setGrid}
+                setList={setList}
+                projects={projects}
+                gridView={gridView}
+                listView={listView}
+                /> }
 
+                {all &&
+                    <>
+                        <div className="work-main-container">
+                            <div className="categories">
+                                <ul>
+                                    <li onClick={showAll} >All </li>
+                                    <li onClick={filterDesign}>Design </li>
+                                    <li onClick={filterDev}> Development </li>
+                                </ul>
+
+                            </div>
+
+                            <div className="views">
+                                <div onClick={setGrid}><CgMenuGridR /></div>
+                                <div onClick={setList}><TfiLayoutMenuV/></div>
+                            </div>
                         </div>
+                        <div className="work-content">
+                            {gridView && <GridView projects={projects}/> }
 
-
-                        <div className="views">
-                            <div onClick={setGrid}><CgMenuGridR /></div>
-                            <div onClick={setList}><TfiLayoutMenuV/></div>
+                            {listView && <ListView projects={projects}/> }
                         </div>
-                    </div>
-
-                    <div className="work-content">
-                        {gridView && <GridView projects={projects}/> }
-
-                        {listView && <ListView projects={projects}/> }
-                    </div>
-                </>
-            }
+                    </>
+                }
 
         </>
 
