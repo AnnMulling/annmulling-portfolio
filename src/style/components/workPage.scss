@@ -26,19 +26,24 @@
 }
 
 /******ListView******/
-/
+
 .work-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     .list-view {
 
         .list-view-titles {
             display: flex;
             justify-content: space-between;
-            margin: 20px 40px;
             font-weight: 500;
-        }
+            margin-left: 1rem;
+            background-color: rgba(234, 233, 233, 0.855);
+            padding: .5rem;
+            border-radius: 5px;
 
+        }
         ul {
             // margin: 0 auto;
             line-height: 1rem;
@@ -111,8 +116,8 @@
                     .thumb-inner {
                         display: flex;
                         flex-direction: column;
-                        align-items: space-between;
-
+                        justify-content: center;
+                        align-items: center;
                         visibility: visible;
                         position: absolute;
                         z-index: 99;

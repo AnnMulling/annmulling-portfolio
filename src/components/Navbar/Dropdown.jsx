@@ -18,30 +18,28 @@ export default function DropDown() {
     const ulClassName = showMenu ? "dropdown" : "hidden";
 
     return (
-         <>
-             <div className="nav-btn">
-                <IoMenu
-                    onClick={dropDown}
-                />
-                <div className="drop-down-menu">
-                    <ul className={ulClassName}>
-                        <li>
-                            <Link to="/" className="link">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/aboutme" className="link">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/work" className="link">Work</Link>
-                        </li>
-                        <li>
-                            <Link to="/" className="link">Contact</Link>
-                        </li>
-                    </ul>
 
-                </div>
-            </div>
+        <div className="nav-btn">
+            <IoMenu
+                onClick={dropDown}
+            />
+            {/* <div className="drop-down-menu"> */}
+                <ul className={ulClassName}>
+                    <li>
+                        <Link to="/" className="link">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/aboutme" className="link">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/work" className="link">Work</Link>
+                    </li>
 
-         </>
+                </ul>
+
+            {/* </div> */}
+        </div>
+
+
     )
 };
