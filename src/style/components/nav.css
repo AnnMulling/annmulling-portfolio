@@ -24,7 +24,7 @@
 }
 .nav-btn .dropdown {
   position: fixed;
-  top: 15%;
+  top: 18%;
   right: 10%;
   background: white;
   border-radius: 10px;
@@ -35,16 +35,16 @@
   line-height: 1.5rem;
   font-family: "Inter";
   font-size: 1rem;
-  color: #39452F;
+  color: #161616;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
-  -webkit-color: #39452F;
-  -moz-color: #39452F;
-  -ms-color: #39452F;
+  -webkit-color: #161616;
+  -moz-color: #161616;
+  -ms-color: #161616;
 }
 .nav-btn .hidden {
   display: none;
@@ -58,7 +58,7 @@
   transform: translateY(-50%);
   right: 5%;
   z-index: 199;
-  background-color: #39452F;
+  background-color: #161616;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }

@@ -21,7 +21,7 @@ html {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background-color: #39452F;
+  background-color: #161616;
   padding: 0;
   margin: 0;
   font-family: "Inter";
@@ -49,16 +49,16 @@ ul li {
   cursor: pointer;
   font-family: "Inter";
   font-size: 1rem;
-  color: #39452F;
+  color: #161616;
   -webkit-font-family: "Inter";
   -moz-font-family: "Inter";
   -ms-font-family: "Inter";
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
-  -webkit-color: #39452F;
-  -moz-color: #39452F;
-  -ms-color: #39452F;
+  -webkit-color: #161616;
+  -moz-color: #161616;
+  -ms-color: #161616;
 }
 .nav-container ul {
   display: flex;

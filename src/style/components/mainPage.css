@@ -16,7 +16,7 @@
 
 */
 .main-profile-pic {
-  margin: 0 auto;
+  margin-left: 2.5rem;
   position: relative;
   overflow: hidden;
 }
