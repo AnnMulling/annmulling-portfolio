@@ -36,6 +36,8 @@
   font-size: 1.5rem;
 }
 
+/******ListView******/
+/*****GridView*******/
 .work-content {
   width: 100%;
 }
@@ -86,7 +88,7 @@
 }
 .work-content .grid-view {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .work-content .grid-view ul li {
   font-weight: 400;
@@ -103,7 +105,7 @@
 }
 .work-content .grid-view ul .project-item {
   position: relative;
-  width: 300px;
+  width: 290px;
   height: 300px;
   cursor: pointer;
 }
