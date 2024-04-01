@@ -16,9 +16,7 @@ export default function Navbar () {
                     <li>
                         <Link to="/work" className="link">Work</Link>
                     </li>
-                    <li>
-                        Contact
-                    </li>
+                    
                     <li id="location-tag">
                          Chicago, IL
                          <span className="globe"><FaLocationDot /></span>

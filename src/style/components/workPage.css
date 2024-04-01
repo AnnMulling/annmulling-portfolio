@@ -36,14 +36,21 @@
   font-size: 1.5rem;
 }
 
+/******ListView******/
 .work-content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*****GridView*******/
 }
 .work-content .list-view .list-view-titles {
   display: flex;
   justify-content: space-between;
-  margin: 20px 40px;
   font-weight: 500;
+  margin-left: 1rem;
+  background-color: rgba(234, 233, 233, 0.855);
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 .work-content .list-view ul {
   line-height: 1rem;
@@ -86,7 +93,7 @@
 }
 .work-content .grid-view {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .work-content .grid-view ul li {
   font-weight: 400;
@@ -103,7 +110,7 @@
 }
 .work-content .grid-view ul .project-item {
   position: relative;
-  width: 300px;
+  width: 290px;
   height: 300px;
   cursor: pointer;
 }
@@ -111,10 +118,13 @@
   visibility: hidden;
 }
 .work-content .grid-view ul .project-item:hover .thumb-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   visibility: visible;
   position: absolute;
   z-index: 99;
-  text-align: center;
   width: 95%;
   height: 60px;
   bottom: 2%;
