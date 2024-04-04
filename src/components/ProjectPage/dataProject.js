@@ -168,6 +168,6 @@ export const projects = [
              name: FaCss3Altjs
             },
         ],
-        development: false,
+        development: true,
     },
 ]
