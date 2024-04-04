@@ -17,7 +17,7 @@ export default function DesignProjects({ filterDesign, filterDev, showAll, setGr
                 <div className="categories">
                     <ul>
                         <li onClick={showAll}>All</li>
-                        <li onClick={filterDesign}> Design </li>
+                        <li onClick={filterDesign}> Volunteer </li>
                         <li onClick={filterDev}> Development</li>
                     </ul>
                 </div>

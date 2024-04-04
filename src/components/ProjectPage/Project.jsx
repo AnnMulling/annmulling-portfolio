@@ -84,7 +84,7 @@ export default function Work() {
                             <div className="categories">
                                 <ul>
                                     <li onClick={showAll} >All </li>
-                                    <li onClick={filterDesign}>Design </li>
+                                    <li onClick={filterDesign}>Volunteer </li>
                                     <li onClick={filterDev}> Development </li>
                                 </ul>
 

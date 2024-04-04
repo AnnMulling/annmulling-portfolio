@@ -4,8 +4,8 @@
 
 .main-profile-pic {
     // margin: 0 auto;
-    background-image: url("https://source.unsplash.com/a-close-up-of-a-gray-cats-face-YQlNLVYckRk");
-    background-size: cover;
+    display: flex;
+    align-content: center;
     margin-left: 1rem;
     position: relative;
     overflow: hidden;
@@ -13,7 +13,7 @@
         position: relative;
         z-index: 100;
         text-shadow: 2px 2px 3px $base-green;
-        padding-top: 55%;
+        padding-top: 30%;
         /*start the text far right*/
         -moz-transform: translateX(100%);
         -webkit-transform: translateX(100%);

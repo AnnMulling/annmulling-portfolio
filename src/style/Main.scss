@@ -18,7 +18,7 @@ html {
 
 #root {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    background-color: $base-black;
+     background: radial-gradient(circle at 45% 60%, rgb(53, 52, 52) 0%, rgb(23, 23, 23) 99.4%);
     border-radius: 1rem;
     padding: 4em;
     margin: 3em;

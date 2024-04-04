@@ -16,8 +16,8 @@
 
 */
 .main-profile-pic {
-  background-image: url("https://source.unsplash.com/a-close-up-of-a-gray-cats-face-YQlNLVYckRk");
-  background-size: cover;
+  display: flex;
+  align-content: center;
   margin-left: 1rem;
   position: relative;
   overflow: hidden;
@@ -26,18 +26,18 @@
   position: relative;
   z-index: 100;
   text-shadow: 2px 2px 3px #464646;
-  padding-top: 55%;
+  padding-top: 30%;
   /*start the text far right*/
   transform: translateX(100%);
   animation: carousel, 15s, linear, infinite;
   -moz-animation: carousel 15s linear infinite;
   -webkit-animation: carousel 15s linear infinite;
-  font-family: "Italiana";
+  font-family: "Roboto";
   font-size: 3rem;
   color: #F6F6F6;
-  -webkit-font-family: "Italiana";
-  -moz-font-family: "Italiana";
-  -ms-font-family: "Italiana";
+  -webkit-font-family: "Roboto";
+  -moz-font-family: "Roboto";
+  -ms-font-family: "Roboto";
   -webkit-font-size: 3rem;
   -moz-font-size: 3rem;
   -ms-font-size: 3rem;
