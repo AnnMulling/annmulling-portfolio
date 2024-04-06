@@ -25,9 +25,6 @@ export default function AboutMe() {
     return (
         <>
             <DropDown />
-
-            <SocialTag />
-
             <div className="about-me-page">
                 <div className="about-img">
                     <img src={profile} alt='profile-img' />
@@ -37,7 +34,7 @@ export default function AboutMe() {
 
                     <p>My name is <strong>Ann.</strong> I speak Thai and English.</p>
                     <p>
-                        I'm a creative and easygoing individual who loves tackling new challenges.
+                        I'm a creative and easy-going individual who loves tackling new challenges.
                         I bring a mix of curiosity and adaptability to everything I do.
                         Whether it's collaborating with others or diving into solo projects,
                         I'm always up for a good adventure.
@@ -65,6 +62,7 @@ export default function AboutMe() {
                         <MdChevronRight className="arrow" onClick={slideRight} />
                     </div>
                 </div>
+            <SocialTag />
             </div>
         </>
     )

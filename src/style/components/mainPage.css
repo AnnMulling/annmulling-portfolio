@@ -1,61 +1,99 @@
 /*
- .italiana-regular {
-     font-family: "Italiana", sans-serif;
-     font-weight: 400;
-    font-style: normal;
- }
-
- .inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-
+    fonts & colors
 */
-.main-profile-pic {
-  display: flex;
-  align-content: center;
+/*
+keyframes & animations
+*/
+.main-page {
   margin-left: 1rem;
   position: relative;
   overflow: hidden;
-}
-.main-profile-pic .carousel {
-  position: relative;
-  z-index: 100;
-  text-shadow: 2px 2px 3px #464646;
-  padding-top: 30%;
-  /*start the text far right*/
-  transform: translateX(100%);
-  animation: carousel, 15s, linear, infinite;
-  -moz-animation: carousel 15s linear infinite;
-  -webkit-animation: carousel 15s linear infinite;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #F6F6F6;
+  font-weight: 400;
   -webkit-font-family: "Roboto", sans-serif;
   -moz-font-family: "Roboto", sans-serif;
   -ms-font-family: "Roboto", sans-serif;
-  -webkit-font-size: 3rem;
-  -moz-font-size: 3rem;
-  -ms-font-size: 3rem;
+  -webkit-font-size: 4rem;
+  -moz-font-size: 4rem;
+  -ms-font-size: 4rem;
   -webkit-color: #F6F6F6;
   -moz-color: #F6F6F6;
   -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
+  animation: fade-in-down 1.5s ease;
 }
-
-/*carousel*/
-@keyframes carousel {
+.main-page .main-page-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-page .main-page-info div {
+  width: 100%;
+  padding-top: 2rem;
+}
+.main-page .main-page-info div .name-slide {
+  width: 100%;
+  text-align: center;
+}
+.main-page .main-page-info div .hi-text {
+  position: relative;
+  top: 15%;
+  left: 7%;
+  width: 100%;
+  text-align: left;
+  z-index: 100;
+  font-family: "Quicksand";
+  font-size: 1.5rem;
+  color: #F6F6F6;
+  font-weight: 400;
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
+  -webkit-font-size: 1.5rem;
+  -moz-font-size: 1.5rem;
+  -ms-font-size: 1.5rem;
+  -webkit-color: #F6F6F6;
+  -moz-color: #F6F6F6;
+  -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
+}
+.main-page .main-page-info div .role-text {
+  position: relative;
+  top: -18%;
+  right: -60%;
+  width: 100%;
+  text-align: right;
+  z-index: 100;
+  font-family: "Quicksand";
+  font-size: 1.5rem;
+  color: #F6F6F6;
+  font-weight: 400;
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
+  -webkit-font-size: 1.5rem;
+  -moz-font-size: 1.5rem;
+  -ms-font-size: 1.5rem;
+  -webkit-color: #F6F6F6;
+  -moz-color: #F6F6F6;
+  -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
+}
+@keyframes fade-in-down {
   from {
-    transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
+    opacity: 0;
+    transform: translateY(-2.5rem);
   }
   to {
-    transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=mainPage.css.map */

@@ -1,19 +1,8 @@
 /*
- .italiana-regular {
-     font-family: "Italiana", sans-serif;
-     font-weight: 400;
-    font-style: normal;
- }
-
- .inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-
+    fonts & colors
+*/
+/*
+keyframes & animations
 */
 .work-main-container {
   display: flex;
@@ -27,6 +16,7 @@
   font-family: "Quicksand";
   font-size: 1rem;
   color: #F6F6F6;
+  font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
   -ms-font-family: "Quicksand";
@@ -36,6 +26,9 @@
   -webkit-color: #F6F6F6;
   -moz-color: #F6F6F6;
   -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
 }
 .work-main-container .categories ul {
   display: flex;
@@ -56,6 +49,7 @@
   font-family: "Quicksand";
   font-size: 1.5rem;
   color: #F6F6F6;
+  font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
   -ms-font-family: "Quicksand";
@@ -65,6 +59,9 @@
   -webkit-color: #F6F6F6;
   -moz-color: #F6F6F6;
   -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
 }
 .work-main-container .views div {
   transition: all linear 120ms;
@@ -96,6 +93,7 @@
   font-family: "Quicksand";
   font-size: 1rem;
   color: #F6F6F6;
+  font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
   -ms-font-family: "Quicksand";
@@ -105,6 +103,9 @@
   -webkit-color: #F6F6F6;
   -moz-color: #F6F6F6;
   -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
 }
 .work-content .list-view ul li {
   display: flex;

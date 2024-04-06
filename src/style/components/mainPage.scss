@@ -2,42 +2,76 @@
 @import "../helper/mixin";
 
 
-.main-profile-pic {
+.main-page {
     // margin: 0 auto;
-    display: flex;
-    align-content: center;
     margin-left: 1rem;
     position: relative;
     overflow: hidden;
     // font-weight: 700;
-    .carousel {
-        position: relative;
-        z-index: 100;
-        text-shadow: 2px 2px 3px $base-green;
-        padding-top: 30%;
-        /*start the text far right*/
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
+    @include font($title-font, 4rem, $base-white);
+    .main-page-info {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
 
-        animation: carousel, 15s, linear, infinite;
-        -moz-animation: carousel 15s linear infinite;
-        -webkit-animation: carousel 15s linear infinite;
-        @include font($title-font, 3rem, $base-white);
+        div {
+            width: 100%;
+            padding-top: 2rem;
+            // height: 100%;
+            .name-slide {
+                width: 100%;
+                text-align: center;
+                // -moz-transform: translateX(100%);
+                // -webkit-transform: translateX(100%);
+                // transform: translateX(100%);
+
+                // @include animations('slide 15s linear infinite')
+            }
+            .hi-text {
+                position: relative;
+                top: 15%;
+                left: 7%;
+                width: 100%;
+                text-align: left;
+                z-index: 100;
+                @include font($detail-font, 1.5rem, $base-white);
+            }
+
+           .role-text {
+                position: relative;
+                top: -18%;
+                right: -60%;
+                width: 100%;
+                text-align: right;
+                z-index: 100;
+
+                @include font($detail-font, 1.5rem, $base-white);
+            }
+        }
 
     }
+    @include animations('fade-in-down 1.5s ease');
+
 }
 
 
-/*carousel*/
-@keyframes carousel {
-   from {
-    transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-   }to {
-    transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-   }
-}
+
+// @include keyframes(slide){
+//     from {
+//         transform: translateX(100%);
+//     }
+//     to {
+//         transform: translateX(-100%);
+//     }
+// }
+
+@include keyframes(fade-in-down){
+    from {
+        opacity: 0;
+        transform: translateY(-2.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }

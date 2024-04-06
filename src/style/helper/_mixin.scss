@@ -1,27 +1,12 @@
 /*
- .italiana-regular {
-     font-family: "Italiana", sans-serif;
-     font-weight: 400;
-    font-style: normal;
- }
-
- .inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-
+    fonts & colors
 */
 
-
-
-@mixin font($font, $fontSize, $color) {
+@mixin font($font, $fontSize, $color, $fontWeight:400) {
     font-family: $font;
     font-size: $fontSize;
     color: $color;
+    font-weight: $fontWeight;
 
     -webkit-font-family: $font;
     -moz-font-family: $font;
@@ -34,4 +19,31 @@
     -webkit-color: $color;
     -moz-color: $color;
     -ms-color: $color;
+
+    -webkit-font-weight: $fontWeight;
+    -moz-font-weight: $fontWeight;
+    -ms-font-weight: $fontWeight;
 }
+
+
+/*
+keyframes & animations
+*/
+@mixin animations($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    animation: #{$str};
+}
+
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+};
