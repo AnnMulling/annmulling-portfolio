@@ -24,12 +24,12 @@
   margin-top: 5rem;
 }
 .work-main-container .categories {
-  font-family: "Inter";
+  font-family: "Quicksand";
   font-size: 1rem;
   color: #F6F6F6;
-  -webkit-font-family: "Inter";
-  -moz-font-family: "Inter";
-  -ms-font-family: "Inter";
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
@@ -53,12 +53,12 @@
   align-items: stretch;
   gap: 1rem;
   cursor: pointer;
-  font-family: "Inter";
+  font-family: "Quicksand";
   font-size: 1.5rem;
   color: #F6F6F6;
-  -webkit-font-family: "Inter";
-  -moz-font-family: "Inter";
-  -ms-font-family: "Inter";
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
   -webkit-font-size: 1.5rem;
   -moz-font-size: 1.5rem;
   -ms-font-size: 1.5rem;
@@ -93,12 +93,12 @@
 .work-content .list-view ul {
   line-height: 1rem;
   cursor: pointer;
-  font-family: "Inter";
+  font-family: "Quicksand";
   font-size: 1rem;
   color: #F6F6F6;
-  -webkit-font-family: "Inter";
-  -moz-font-family: "Inter";
-  -ms-font-family: "Inter";
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
