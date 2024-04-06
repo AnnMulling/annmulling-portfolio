@@ -1,19 +1,8 @@
 /*
- .italiana-regular {
-     font-family: "Italiana", sans-serif;
-     font-weight: 400;
-    font-style: normal;
- }
-
- .inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-
+    fonts & colors
+*/
+/*
+keyframes & animations
 */
 .nav-btn {
   font-size: 2rem;
@@ -37,6 +26,7 @@
   font-family: "Quicksand";
   font-size: 1rem;
   color: #464646;
+  font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
   -ms-font-family: "Quicksand";
@@ -46,6 +36,9 @@
   -webkit-color: #464646;
   -moz-color: #464646;
   -ms-color: #464646;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
 }
 .nav-btn .hidden {
   display: none;
@@ -54,19 +47,10 @@
 .social-tag ul {
   padding: 0.5rem;
   width: 4rem;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 5.5%;
+  position: absolute;
+  top: 100%;
+  left: 10%;
   z-index: 199;
-  background-color: #464646;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  opacity: 50%;
-  transition: all linear 180ms;
-}
-.social-tag ul:hover {
-  opacity: 100%;
 }
 .social-tag ul li {
   display: block;
@@ -81,6 +65,7 @@
   font-family: "Quicksand";
   font-size: 1.5rem;
   color: #F6F6F6;
+  font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
   -ms-font-family: "Quicksand";
@@ -90,6 +75,9 @@
   -webkit-color: #F6F6F6;
   -moz-color: #F6F6F6;
   -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
   opacity: 60%;
   transition: all linear 120ms;
 }

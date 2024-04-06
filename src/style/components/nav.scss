@@ -36,19 +36,16 @@
     ul {
         padding: 0.5rem;
         width: 4rem;
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 5.5%;
+        position: absolute;
+        top:  100%;
+        left: 10%;
         z-index: 199;
-        background-color: $base-green;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        opacity: 50%;
-        transition: all linear 180ms;
-        &:hover {
-            opacity: 100%;
-        }
+        // background-color: $base-green;
+        // opacity: 50%;
+        // transition: all linear 180ms;
+        // &:hover {
+        //     opacity: 100%;
+        // }
         li {
             display: block;
             margin: 1px 0px;

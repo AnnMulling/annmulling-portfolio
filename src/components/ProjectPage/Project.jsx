@@ -54,7 +54,7 @@ export default function Work() {
     return (
         <>
             <DropDown />
-            <SocialTag />
+
             { design ?
                 <DesignProjects
                 filterDesign={filterDesign}
@@ -102,7 +102,7 @@ export default function Work() {
                         </div>
                     </>
                 }
-
+            <SocialTag />
         </>
 
     )
