@@ -32,12 +32,12 @@
   animation: carousel, 15s, linear, infinite;
   -moz-animation: carousel 15s linear infinite;
   -webkit-animation: carousel 15s linear infinite;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 3rem;
   color: #F6F6F6;
-  -webkit-font-family: "Roboto";
-  -moz-font-family: "Roboto";
-  -ms-font-family: "Roboto";
+  -webkit-font-family: "Roboto", sans-serif;
+  -moz-font-family: "Roboto", sans-serif;
+  -ms-font-family: "Roboto", sans-serif;
   -webkit-font-size: 3rem;
   -moz-font-size: 3rem;
   -ms-font-size: 3rem;
