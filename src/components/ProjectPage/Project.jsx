@@ -102,7 +102,7 @@ export default function Work() {
                         </div>
                     </>
                 }
-            <SocialTag />
+            {/* <SocialTag /> */}
         </>
 
     )
