@@ -30,11 +30,11 @@
             .hi-text {
                 position: relative;
                 top: 15%;
-                left: 7%;
+                padding-left: 20%;
                 width: 100%;
                 text-align: left;
                 z-index: 100;
-                @include font($detail-font, 1.5rem, $base-white);
+                @include font($detail-font, 1rem, $base-white);
             }
 
            .role-text {
@@ -45,7 +45,7 @@
                 text-align: right;
                 z-index: 100;
 
-                @include font($detail-font, 1.5rem, $base-white);
+                @include font($detail-font, 1rem, $base-white);
             }
         }
 
@@ -74,4 +74,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-    }
+}

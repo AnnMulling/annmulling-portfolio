@@ -11,6 +11,7 @@ keyframes & animations
   height: -moz-max-content;
   height: max-content;
   gap: 4rem;
+  animation: fade-in-down 1.5s ease;
 }
 .about-me-page .about-detail {
   display: flex;
@@ -145,11 +146,10 @@ keyframes & animations
   -ms-font-weight: 400;
 }
 .about-me-page .about-img {
-  margin: 4rem auto;
+  margin-top: 4rem;
   height: 100%;
   width: 50%;
   padding: 1rem;
-  transform: rotate(-2.5deg);
 }
 .about-me-page .about-img img {
   height: 100%;
