@@ -9,7 +9,6 @@
     justify-content: center;
     height: max-content;
     gap: 4rem;
-
     .about-detail {
         display: flex;
         flex-direction: column;
@@ -107,4 +106,5 @@
     }
     @include animations('fade-in-down 1.5s ease');
 }
+
 

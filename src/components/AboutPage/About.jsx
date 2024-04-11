@@ -62,10 +62,8 @@ export default function AboutMe() {
                         <MdChevronRight className="arrow" onClick={slideRight} />
                     </div>
                 </div>
-                <div>
-                    <SocialTag />
-                </div>
             </div>
+            <SocialTag />
         </>
     )
 }
