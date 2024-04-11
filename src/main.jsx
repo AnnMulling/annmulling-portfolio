@@ -11,6 +11,7 @@ import AboutMe from './components/AboutPage/About.jsx';
 import Work from './components/ProjectPage/Project.jsx';
 
 import './style/Main.css'
+import Project1 from './components/ProjectPage/Project1.jsx';
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
     path: "/work",
     element: <Work />,
     errorElement: <ErrorPage />
+  },
+  {
+    path: "/testproject",
+    element: <Project1 />
+
   }
 ]);
 
