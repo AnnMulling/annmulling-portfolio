@@ -2,25 +2,32 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 //css & others
 import 'swiper/scss';
-import 'swiper/scss/navigation';
+import 'swiper/scss/effect-coverflow';
 import 'swiper/scss/pagination';
 
 import '../../style/components/Test/projects.css'
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Pagination, EffectCoverflow} from 'swiper/modules';
 
 
 export default function Project1 () {
     return (
         <>
             <Swiper
-                cssMode={true}
-                navigation={true}
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
                 pagination={true}
-                mousewheel={true}
-                keyboard={true}
-                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide>Slide 1</SwiperSlide>
