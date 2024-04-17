@@ -2,36 +2,55 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 //css & others
 import 'swiper/scss';
-import 'swiper/scss/navigation';
+import 'swiper/scss/effect-coverflow';
 import 'swiper/scss/pagination';
 
 import '../../style/components/Test/projects.css'
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Pagination, EffectCoverflow} from 'swiper/modules';
 
 
 export default function Project1 () {
     return (
         <>
             <Swiper
-                cssMode={true}
-                navigation={true}
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
                 pagination={true}
-                mousewheel={true}
-                keyboard={true}
-                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                <SwiperSlide>Slide 1
+                    <img src="" alt="project1"/>
+                </SwiperSlide>
+                <SwiperSlide>Slide 2
+                    <img src="" alt="project1"/>
+                </SwiperSlide>
+                <SwiperSlide>Slide 3
+                    <img src="" alt="project1"/>
+                </SwiperSlide>
+                <SwiperSlide>Slide 4
+                    <img src="" alt="project1"/>
+                </SwiperSlide>
+                <SwiperSlide>Slide 5
+                    <img src="" alt="project1"/>
+                </SwiperSlide>
+                <SwiperSlide>Slide 6
+                    <img src="" alt="project1"/>
+                </SwiperSlide>
+                <SwiperSlide>Slide 7
+                    <img src="" alt="project1"/>
+                </SwiperSlide>
             </Swiper>
     </>
     )
