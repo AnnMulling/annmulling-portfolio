@@ -7,6 +7,7 @@ keyframes & animations
 .work-main-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: -moz-max-content;
   height: max-content;
   width: 100%;
@@ -32,18 +33,34 @@ keyframes & animations
 }
 .work-main-container .categories ul {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   cursor: pointer;
 }
 .work-main-container .categories ul li {
-  transition: all linear 120ms;
+  padding: 0.5rem;
 }
-.work-main-container .categories ul li:hover {
-  transform: scale(1.05);
+.work-main-container .categories ul li::after {
+  visibility: hidden;
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.08rem;
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: #C3773D;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.work-main-container .categories ul li:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .work-main-container .views {
   display: flex;
-  align-items: stretch;
   gap: 1rem;
   cursor: pointer;
   font-family: "Quicksand";
@@ -75,7 +92,6 @@ keyframes & animations
   width: 100%;
   display: flex;
   flex-direction: column;
-  /*****GridView*******/
 }
 .work-content .list-view .list-view-titles {
   display: flex;
@@ -130,76 +146,8 @@ keyframes & animations
 .work-content .tools-block:hover, .work-content .url-block:hover {
   color: #C3773D;
 }
-.work-content .grid-view {
-  display: flex;
-  flex-wrap: wrap;
-}
-.work-content .grid-view ul li {
-  font-weight: 400;
-  padding: 1.5rem;
-  background: #F6F6F6;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-.work-content .grid-view ul li:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-.work-content .grid-view ul .project-item {
-  position: relative;
-  width: 290px;
-  height: 300px;
-  cursor: pointer;
-}
-.work-content .grid-view ul .project-item .thumb-inner {
-  visibility: hidden;
-}
-.work-content .grid-view ul .project-item:hover .thumb-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  visibility: visible;
-  position: absolute;
-  z-index: 99;
-  width: 95%;
-  height: 60px;
-  bottom: 2%;
-  padding: 10px;
-  right: 0%;
-  transition: all 0.5s ease;
-}
-.work-content .grid-view ul .project-item:hover .thumb-inner p {
-  visibility: hidden;
-  text-align: center;
-}
-.work-content .grid-view ul .project-item:hover .thumb-inner:hover {
-  border-radius: 10px;
-  height: 100%;
-  background-color: rgba(150, 145, 145, 0.838);
-}
-.work-content .grid-view ul .project-item:hover .thumb-inner:hover p {
-  visibility: visible;
-  position: relative;
-  opacity: 1;
-  color: #191919;
-}
-.work-content .grid-view ul .project-item .thumb {
-  margin: 10px 0;
-}
-.work-content .grid-view ul .project-item .thumb img {
-  width: 100%;
-  height: 100%;
-}
-.work-content .grid-view .tools-block-grid {
-  font-size: 1.5rem;
-}
-.work-content .grid-view .tools-block-grid:hover {
-  color: #C3773D;
-}
 
+/*****GridView*******/
 .hidden {
   display: none;
 }/*# sourceMappingURL=workPage.css.map */

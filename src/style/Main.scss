@@ -35,12 +35,15 @@ html {
         text-decoration: none;
         color: inherit;
     }
+
 }
 
 /* Nav bar*/
 ul li {
     list-style-type: none;
 }
+
+
 
 .nav-container {
     cursor: pointer;
@@ -50,15 +53,39 @@ ul li {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 2rem;
+        // margin-right: 2rem;
 
         li {
             display: flex;
-            align-items: stretch;
             margin-right: 2rem;
-
+            .link {
+                padding: .5rem;
+                position: relative;
+                &::after {
+                    visibility: hidden;
+                    content: "";
+                    color: rgb(255, 255, 255);
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    transform: scaleX(0);
+                    border-radius: 10px;
+                    height: 0.08rem;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $hover-color;
+                    transform-origin: bottom right;
+                    transition: transform 0.3s ease-out;
+                }
+                &:hover {
+                    &::after {
+                        visibility: visible;
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
         }
-
     }
 
 }

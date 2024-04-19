@@ -25,6 +25,7 @@ export default function AboutMe() {
     return (
         <>
             <DropDown />
+            <SocialTag />
             <div className="about-me-page">
                 <div className="about-img">
                     <img src={profile} alt='profile-img' />
@@ -63,7 +64,7 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-            <SocialTag />
+
         </>
     )
 }

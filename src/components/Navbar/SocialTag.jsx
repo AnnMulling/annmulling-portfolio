@@ -13,7 +13,7 @@ export default function SocialTag() {
                 <ul className="social-icons">
                     <li><a href="https://github.com/AnnMulling" title="Github" target="_blank"><FaGithub /></a></li>
                     <li><a href="https://www.linkedin.com/in/ann-m-653708227/" title="Linkedin" target="_blank"><FaLinkedin /></a></li>
-                    <li><a href="mailto:primpraowann@gmail.com" title="Email" target="_blank"><MdOutlineMarkEmailUnread /></a></li>
+                    <li><a href="mailto:p.annmulling@gmail.com" title="Email" target="_blank"><MdOutlineMarkEmailUnread /></a></li>
                 </ul>
              </div>
         </>

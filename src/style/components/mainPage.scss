@@ -11,43 +11,32 @@
     @include font($title-font, 4rem, $base-white);
     .main-page-info {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        text-align: center;
+        margin: 20% 0;
+            // -moz-transform: translateX(100%);
+            // -webkit-transform: translateX(100%);
+            // transform: translateX(100%);
 
-        div {
-            width: 100%;
-            padding-top: 2rem;
-            // height: 100%;
-            .name-slide {
-                width: 100%;
-                text-align: center;
-                // -moz-transform: translateX(100%);
-                // -webkit-transform: translateX(100%);
-                // transform: translateX(100%);
-
-                // @include animations('slide 15s linear infinite')
+            // @include animations('slide 15s linear infinite')
+            h1 {
+                &::before {
+                    content: 'Hi there, I am';
+                    display: block;
+                    position: relative;
+                    right: 25%;
+                    // background-color: rgb(71, 74, 74);
+                    @include font($detail-font, 1rem, $base-white);
+                }
+                &::after {
+                    content: 'a Jr Software Engineer';
+                    display: block;
+                    position: relative;
+                    left: 25%;
+                    margin-top: 1rem;
+                    // background-color: rgb(41, 87, 87);
+                    @include font($detail-font, 1rem, $base-white);
+                    }
             }
-            .hi-text {
-                position: relative;
-                top: 15%;
-                padding-left: 20%;
-                width: 100%;
-                text-align: left;
-                z-index: 100;
-                @include font($detail-font, 1rem, $base-white);
-            }
-
-           .role-text {
-                position: relative;
-                top: -18%;
-                right: -60%;
-                width: 100%;
-                text-align: right;
-                z-index: 100;
-
-                @include font($detail-font, 1rem, $base-white);
-            }
-        }
 
     }
     @include animations('fade-in-down 1.5s ease');

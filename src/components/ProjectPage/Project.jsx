@@ -4,8 +4,7 @@ import DropDown from "../Navbar/Dropdown";
 import SocialTag from "../Navbar/SocialTag";
 
 //icons
-import { CgMenuGridR } from "react-icons/cg";
-import { TfiLayoutMenuV } from "react-icons/tfi";
+import { GoListUnordered } from "react-icons/go";
 import { PiSlideshowFill } from "react-icons/pi";
 
 //css & other
@@ -15,6 +14,7 @@ import GridView from "./GridView";
 import ListView from "./ListView";
 import VolProjects from "./Volunteer/VolProjects";
 import DevProjects from "./Development/DevProjects";
+import Navbar from "../Navbar/Nav";
 
 export default function Work() {
     const [gridView, setGridView] = useState(true);
@@ -53,6 +53,7 @@ export default function Work() {
 
     return (
         <>
+            {/* <Navbar /> */}
             <DropDown />
 
             { design ?
@@ -92,12 +93,11 @@ export default function Work() {
 
                             <div className="views">
                                 <div onClick={setGrid}><PiSlideshowFill /></div>
-                                <div onClick={setList}><TfiLayoutMenuV/></div>
+                                <div onClick={setList}><GoListUnordered /></div>
                             </div>
                         </div>
                         <div className="work-content">
                             {gridView && <GridView projects={projects}/> }
-
                             {listView && <ListView projects={projects}/> }
                         </div>
                     </>

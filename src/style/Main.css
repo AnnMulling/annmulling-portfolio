@@ -59,12 +59,35 @@ ul li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 2rem;
 }
 .nav-container ul li {
   display: flex;
-  align-items: stretch;
   margin-right: 2rem;
+}
+.nav-container ul li .link {
+  padding: 0.5rem;
+  position: relative;
+}
+.nav-container ul li .link::after {
+  visibility: hidden;
+  content: "";
+  color: rgb(255, 255, 255);
+  display: block;
+  position: relative;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 10px;
+  height: 0.08rem;
+  bottom: 0;
+  left: 0;
+  background-color: #C3773D;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.nav-container ul li .link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .globe {

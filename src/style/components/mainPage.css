@@ -28,24 +28,14 @@ keyframes & animations
 }
 .main-page .main-page-info {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.main-page .main-page-info div {
-  width: 100%;
-  padding-top: 2rem;
-}
-.main-page .main-page-info div .name-slide {
-  width: 100%;
   text-align: center;
+  margin: 20% 0;
 }
-.main-page .main-page-info div .hi-text {
+.main-page .main-page-info h1::before {
+  content: "Hi there, I am";
+  display: block;
   position: relative;
-  top: 15%;
-  padding-left: 20%;
-  width: 100%;
-  text-align: left;
-  z-index: 100;
+  right: 25%;
   font-family: "Quicksand";
   font-size: 1rem;
   color: #F6F6F6;
@@ -63,13 +53,12 @@ keyframes & animations
   -moz-font-weight: 400;
   -ms-font-weight: 400;
 }
-.main-page .main-page-info div .role-text {
+.main-page .main-page-info h1::after {
+  content: "a Jr Software Engineer";
+  display: block;
   position: relative;
-  top: -18%;
-  right: -60%;
-  width: 100%;
-  text-align: right;
-  z-index: 100;
+  left: 25%;
+  margin-top: 1rem;
   font-family: "Quicksand";
   font-size: 1rem;
   color: #F6F6F6;
