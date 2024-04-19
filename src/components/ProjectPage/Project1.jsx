@@ -5,6 +5,7 @@ import 'swiper/scss';
 import 'swiper/scss/effect-coverflow';
 import 'swiper/scss/pagination';
 import { projects } from "./dataProject";
+import '../../style/components/workPage.css'
 
 import '../../style/components/Test/projects.css'
 
@@ -35,28 +36,31 @@ export default function Project1() {
                 {filteredProj.map((project) => (
 
                     <SwiperSlide key={project.id}>
-                        <img src={project.img} alt="project1" />
-                        <div className="thumb-inner" >
-
-                            <p>
-                                {project.description}
-
-                            </p>
-                            <p>
-                                {project.techStack.map((tool) => (
-                                    <span className="tools-block-grid" key={tool.id}><tool.name /></span>
-                                ))}
-                            </p>
-                            <p >
-                                {project.url.map((url) => (
-                                    <span className="tools-block-grid" key={url.id}>
-                                        <a href={url.url} target="_blank"><span><url.icon /></span></a>
-                                    </span>
-                                ))}
-                            </p>
-
+                        <h1 style={{ fontWeight: "bold", marginLeft: 5 }}>{project.name}</h1>
+                        <div className="project-item" >
+                            <a href={project.url[1].url} target="_blank">
+                                <img src={project.img} alt="project" />
+                            </a>
+                            <div className="thumb-inner" >
+                                <p>
+                                    {project.description}
+                                </p>
+                                <p>
+                                    {project.techStack.map((tool) => (
+                                        <span className="tools-block-grid" key={tool.id}><tool.name /></span>
+                                    ))}
+                                </p>
+                                <p >
+                                    {project.url.map((url) => (
+                                        <span className="tools-block-grid" key={url.id}>
+                                            <a href={url.url} target="_blank"><span><url.icon /></span></a>
+                                        </span>
+                                    ))}
+                                </p>
+                            </div>
 
                         </div>
+
                     </SwiperSlide>
                 ))}
 
