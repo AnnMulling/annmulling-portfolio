@@ -3,7 +3,7 @@ import DropDown from '../Navbar/Dropdown';
 
 //icons & imgs
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import profile from '../../assets/images/profile-girl.jpg'
+import profile from '../../assets/images/profile.jpg'
 
 //css & other
 import { data } from "./data";
