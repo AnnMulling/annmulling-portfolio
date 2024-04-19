@@ -6,19 +6,19 @@ import SocialTag from "../Navbar/SocialTag";
 //icons
 import { CgMenuGridR } from "react-icons/cg";
 import { TfiLayoutMenuV } from "react-icons/tfi";
-
+import { PiSlideshowFill } from "react-icons/pi";
 
 //css & other
 import '../../style/components/workPage.css';
 import { projects } from "./dataProject";
 import GridView from "./GridView";
 import ListView from "./ListView";
-import DesignProjects from "./Design/DesignProjects";
+import VolProjects from "./Volunteer/VolProjects";
 import DevProjects from "./Development/DevProjects";
 
 export default function Work() {
-    const [gridView, setGridView] = useState(false);
-    const [listView, setListView] = useState(true);
+    const [gridView, setGridView] = useState(true);
+    const [listView, setListView] = useState(false);
     const [design, setDesign] = useState(false);
     const [dev, setDev] = useState(false);
     const [all, setAll] = useState(true);
@@ -56,7 +56,7 @@ export default function Work() {
             <DropDown />
 
             { design ?
-                <DesignProjects
+                <VolProjects
                 filterDesign={filterDesign}
                 filterDev={filterDev}
                 showAll={showAll}
@@ -91,7 +91,7 @@ export default function Work() {
                             </div>
 
                             <div className="views">
-                                <div onClick={setGrid}><CgMenuGridR /></div>
+                                <div onClick={setGrid}><PiSlideshowFill /></div>
                                 <div onClick={setList}><TfiLayoutMenuV/></div>
                             </div>
                         </div>

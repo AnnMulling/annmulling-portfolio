@@ -1,4 +1,7 @@
 
+@import "../../helper/mixin";
+@import "../../helper/variable";
+
 .swiper {
     width: 100%;
     padding-top: 100px;
@@ -11,8 +14,71 @@
     background-size: cover;
     width: 500px;
     height: 500px;
-    img {
-        display: block;
-        width: 100%;
-      }
-  }
+
+    .project-item {
+        position: absolute;
+        margin-top: 1rem;
+        img {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+          }
+
+        .thumb-inner {
+            visibility: hidden;
+        }
+        &:hover {
+
+            .thumb-inner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                visibility: visible;
+                position: absolute;
+                z-index: 99;
+                width: 95%;
+                height: 60px;
+                bottom: 2%;
+                padding: 10px;
+                right: .5%;
+                -webkit-transition: all 0.5s ease ;
+                transition: all 0.5s ease;
+
+                p {
+                    visibility: hidden;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    height: 100%;
+                    background-color: rgba(201, 201, 201, 0.838);
+
+                    p {
+                        visibility: visible;
+                        position: relative;
+                        opacity: 1;
+                        color: #191919;
+
+                    }
+                }
+
+            }
+        }
+
+
+        .tools-block-grid {
+            font-size: 2rem;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+ }
+
+
+
+.hidden {
+    display: none;
+}

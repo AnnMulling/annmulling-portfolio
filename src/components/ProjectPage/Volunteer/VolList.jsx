@@ -2,7 +2,7 @@
 //css & other
 import '../../../style/components/workPage.css';
 
-export default function DesList({ projects }) {
+export default function VolList({ projects }) {
     const filteredDes = projects.filter((project) => project.development === false);
     return (
         <div className="list-view">

@@ -4,14 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/scss/effect-coverflow';
 import 'swiper/scss/pagination';
-import '../../style/components/Test/projects.css'
+import '../../../style/components/Test/projects.css'
 
 // import required modules
 import { Pagination, EffectCoverflow } from 'swiper/modules';
 
 
-export default function Project1({ projects }) {
-    const filteredProj = projects.filter((project) => project.development === true);
+export default function VolGrid({ projects }) {
+    const filteredProj = projects.filter((project) => project.development === false);
     return (
         <>
             <Swiper

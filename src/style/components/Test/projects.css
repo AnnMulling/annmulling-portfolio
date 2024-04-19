@@ -1,3 +1,9 @@
+/*
+    fonts & colors
+*/
+/*
+keyframes & animations
+*/
 .swiper {
   width: 100%;
   padding-top: 100px;
@@ -11,7 +17,55 @@
   width: 500px;
   height: 500px;
 }
-.swiper-slide img {
+.swiper-slide .project-item {
+  position: absolute;
+  margin-top: 1rem;
+}
+.swiper-slide .project-item img {
   display: block;
   width: 100%;
+  cursor: pointer;
+}
+.swiper-slide .project-item .thumb-inner {
+  visibility: hidden;
+}
+.swiper-slide .project-item:hover .thumb-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  position: absolute;
+  z-index: 99;
+  width: 95%;
+  height: 60px;
+  bottom: 2%;
+  padding: 10px;
+  right: 0.5%;
+  transition: all 0.5s ease;
+}
+.swiper-slide .project-item:hover .thumb-inner p {
+  visibility: hidden;
+  text-align: center;
+  font-size: 1rem;
+}
+.swiper-slide .project-item:hover .thumb-inner:hover {
+  height: 100%;
+  background-color: rgba(201, 201, 201, 0.838);
+}
+.swiper-slide .project-item:hover .thumb-inner:hover p {
+  visibility: visible;
+  position: relative;
+  opacity: 1;
+  color: #191919;
+}
+.swiper-slide .project-item .tools-block-grid {
+  font-size: 2rem;
+}
+.swiper-slide .project-item .tools-block-grid:hover {
+  color: #C3773D;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=projects.css.map */
