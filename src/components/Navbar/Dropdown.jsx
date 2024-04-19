@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 //icons
 import { IoMenu } from "react-icons/io5";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup } from "react-icons/io";
 
 //css & other
 import '../../style/components/nav.css'
@@ -20,22 +22,25 @@ export default function DropDown() {
     return (
 
         <div className="nav-btn">
-            <IoMenu
-                onClick={dropDown}
-            />
+            {!showMenu && <IoMdArrowDropdown onClick={dropDown} />}
             {/* <div className="drop-down-menu"> */}
-                <ul className={ulClassName}>
-                    <li>
-                        <Link to="/" className="link">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/aboutme" className="link">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/work" className="link">Work</Link>
-                    </li>
+            {showMenu &&
+                <>
+                    <IoMdArrowDropup onClick={dropDown} />
+                        <ul className={ulClassName}>
+                            <li>
+                                <Link to="/" className="link">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/aboutme" className="link">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/work" className="link">Work</Link>
+                            </li>
 
-                </ul>
+                        </ul>
+                </>
+            }
 
             {/* </div> */}
         </div>

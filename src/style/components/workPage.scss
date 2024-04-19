@@ -4,6 +4,7 @@
 .work-main-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: max-content;
     width: 100%;
     margin-top: 5rem;
@@ -12,12 +13,31 @@
         @include font($detail-font, 1rem, $base-white);
         ul {
             display: flex;
-            gap: 2rem;
+            gap: 1rem;
             cursor: pointer;
             li {
-                transition: all linear 120ms ;
+                padding: .5rem;
+                &::after {
+                    visibility: hidden;
+                    content: "";
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 0.08rem;
+                    border-radius: 10px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $hover-color;
+                    transform-origin: bottom right;
+                    transition: transform 0.3s ease-out;
+                }
                 &:hover {
-                    transform: scale(1.05);
+                    &::after {
+                        visibility: visible;
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
                 }
             }
         }
@@ -25,7 +45,7 @@
 
     .views {
         display: flex;
-        align-items: stretch;
+        // align-items: stretch;
         gap: 1rem;
         cursor: pointer;
         @include font($detail-font, 1.5rem, $base-white);
@@ -95,101 +115,99 @@
         }
     }
 
-
+}
 
 
     /*****GridView*******/
-    .grid-view {
-        display: flex;
-        // justify-content: space-between;
-        flex-wrap: wrap;
-        ul {
+//     .grid-view {
 
-            li {
+//         ul {
 
-                font-weight: 400;
-                padding: 1.5rem;
-                background: $base-white;
-                border-radius: 10px;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-                cursor: pointer;
-                transition: all 300ms ease-in-out;
+//             li {
 
-                &:hover {
-                    transform: scale(1.05);
-                    cursor: pointer;
-                }
+//                 font-weight: 400;
+//                 padding: 1.5rem;
+//                 background: $base-white;
+//                 border-radius: 10px;
+//                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+//                 cursor: pointer;
+//                 transition: all 300ms ease-in-out;
 
-            }
-            .project-item {
-                position: relative;
-                width: 290px;
-                height: 300px;
-                cursor: pointer;
+//                 &:hover {
+//                     transform: scale(1.05);
+//                     cursor: pointer;
+//                 }
 
-                .thumb-inner {
-                    visibility: hidden;
-                }
-                &:hover {
+//             }
+//             .project-item {
+//                 position: relative;
+//                 width: 290px;
+//                 height: 300px;
+//                 cursor: pointer;
 
-                    .thumb-inner {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        visibility: visible;
-                        position: absolute;
-                        z-index: 99;
-                        width: 95%;
-                        height: 60px;
-                        bottom: 2%;
-                        padding: 10px;
-                        right: 0%;
-                        -webkit-transition: all 0.5s ease ;
-                        transition: all 0.5s ease;
+//                 .thumb-inner {
+//                     visibility: hidden;
+//                 }
+//                 &:hover {
 
-                        p {
-                            visibility: hidden;
-                            text-align: center;
+//                     .thumb-inner {
+//                         display: flex;
+//                         flex-direction: column;
+//                         justify-content: center;
+//                         align-items: center;
+//                         visibility: visible;
+//                         position: absolute;
+//                         z-index: 99;
+//                         width: 95%;
+//                         height: 60px;
+//                         bottom: 2%;
+//                         padding: 10px;
+//                         right: 0%;
+//                         -webkit-transition: all 0.5s ease ;
+//                         transition: all 0.5s ease;
 
-                        }
+//                         p {
+//                             visibility: hidden;
+//                             text-align: center;
 
-                        &:hover {
-                            border-radius: 10px;
-                            height: 100%;
-                            background-color: rgba(150, 145, 145, 0.838);
+//                         }
 
-                            p {
-                                visibility: visible;
-                                 position: relative;
-                                 opacity: 1;
-                                 color: #191919;
+//                         &:hover {
+//                             border-radius: 10px;
+//                             height: 100%;
+//                             background-color: rgba(150, 145, 145, 0.838);
 
-                            }
-                        }
+//                             p {
+//                                 visibility: visible;
+//                                  position: relative;
+//                                  opacity: 1;
+//                                  color: #191919;
 
-                    }
-                }
+//                             }
+//                         }
 
-                .thumb {
-                    margin: 10px 0;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
+//                     }
+//                 }
 
-        }
-        .tools-block-grid {
-            font-size: 1.5rem;
-        &:hover {
-            color: $hover-color;
-        }
-        }
-    }
+//                 .thumb {
+//                     margin: 10px 0;
+//                     img {
+//                         width: 100%;
+//                         height: 100%;
+//                     }
+//                 }
+//             }
 
-}
+//         }
+//         .tools-block-grid {
+//             font-size: 1.5rem;
+//         &:hover {
+//             color: $hover-color;
+//         }
+//         }
+//     }
+
+// }
 
 
 .hidden {

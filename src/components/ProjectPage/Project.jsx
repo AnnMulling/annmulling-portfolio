@@ -14,6 +14,7 @@ import GridView from "./GridView";
 import ListView from "./ListView";
 import VolProjects from "./Volunteer/VolProjects";
 import DevProjects from "./Development/DevProjects";
+import Navbar from "../Navbar/Nav";
 
 export default function Work() {
     const [gridView, setGridView] = useState(true);
@@ -52,6 +53,7 @@ export default function Work() {
 
     return (
         <>
+            {/* <Navbar /> */}
             <DropDown />
 
             { design ?

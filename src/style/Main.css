@@ -59,10 +59,14 @@ ul li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 2rem;
 }
 .nav-container ul li {
+  display: flex;
   margin-right: 2rem;
+}
+.nav-container ul li .link {
+  padding: 0.5rem;
+  position: relative;
 }
 .nav-container ul li .link::after {
   visibility: hidden;
@@ -72,10 +76,11 @@ ul li {
   position: relative;
   width: 100%;
   transform: scaleX(0);
-  height: 0.05rem;
+  border-radius: 10px;
+  height: 0.08rem;
   bottom: 0;
   left: 0;
-  background-color: #F6F6F6;
+  background-color: #C3773D;
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }

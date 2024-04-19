@@ -14,7 +14,6 @@ keyframes & animations
 }
 .nav-btn .dropdown {
   position: absolute;
-  top: 100%;
   right: 10%;
   background: #F6F6F6;
   border-radius: 10px;

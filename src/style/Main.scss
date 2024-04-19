@@ -53,11 +53,14 @@ ul li {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 2rem;
+        // margin-right: 2rem;
 
         li {
+            display: flex;
             margin-right: 2rem;
             .link {
+                padding: .5rem;
+                position: relative;
                 &::after {
                     visibility: hidden;
                     content: "";
@@ -66,10 +69,11 @@ ul li {
                     position: relative;
                     width: 100%;
                     transform: scaleX(0);
-                    height: 0.05rem;
+                    border-radius: 10px;
+                    height: 0.08rem;
                     bottom: 0;
                     left: 0;
-                    background-color: $base-white;
+                    background-color: $hover-color;
                     transform-origin: bottom right;
                     transition: transform 0.3s ease-out;
                 }
