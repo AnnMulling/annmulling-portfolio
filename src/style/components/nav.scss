@@ -34,23 +34,25 @@
 .social-tag {
 
     ul {
-       padding-top: 1.5rem;
-        width: 4rem;
-        position: absolute;
-        top:  100%;
-        left: 10%;
+        padding: 1rem;
+        width: 2.5rem;
+        position: fixed;
+        top: 50%;
+        right: 5.5%;
         z-index: 199;
-        // background-color: $base-green;
-        // opacity: 50%;
-        // transition: all linear 180ms;
-        // &:hover {
-        //     opacity: 100%;
-        // }
+        background-color: $base-green;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        opacity: 50%;
+        transition: all linear 180ms;
+        &:hover {
+            opacity: 100%;
+        }
         li {
             display: block;
-            margin: 1px 0px;
             text-align: left;
-            padding-left: 15px;
+            padding-left: 0.5rem;
+
             a {
                 cursor: pointer;
                 width:50px;

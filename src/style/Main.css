@@ -62,9 +62,27 @@ ul li {
   margin-right: 2rem;
 }
 .nav-container ul li {
-  display: flex;
-  align-items: stretch;
   margin-right: 2rem;
+}
+.nav-container ul li .link::after {
+  visibility: hidden;
+  content: "";
+  color: rgb(255, 255, 255);
+  display: block;
+  position: relative;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.05rem;
+  bottom: 0;
+  left: 0;
+  background-color: #F6F6F6;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.nav-container ul li .link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .globe {
