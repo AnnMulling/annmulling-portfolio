@@ -16,8 +16,10 @@ keyframes & animations
   background-size: cover;
   width: 500px;
   height: 500px;
+  text-align: center;
 }
 .swiper-slide .project-item {
+  text-align: center;
   position: absolute;
   margin-top: 1rem;
 }
