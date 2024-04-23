@@ -6,28 +6,42 @@
     width: 100%;
     padding-top: 100px;
     padding-bottom: 50px;
+
 }
 
-  .swiper-slide {
+.swiper-slide {
     background-color: white;
     background-position: center;
     background-size: cover;
     width: 500px;
     height: 500px;
+    text-align: center;
 
     .project-item {
+        text-align: center;
         position: absolute;
         margin-top: 1rem;
+
         img {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            transition: all 0.5s ease;
+
             display: block;
             width: 100%;
             cursor: pointer;
+
+            &:hover {
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
+            }
           }
 
         .thumb-inner {
             visibility: hidden;
         }
         &:hover {
+
 
             .thumb-inner {
                 display: flex;

@@ -16,15 +16,24 @@ keyframes & animations
   background-size: cover;
   width: 500px;
   height: 500px;
+  text-align: center;
 }
 .swiper-slide .project-item {
+  text-align: center;
   position: absolute;
   margin-top: 1rem;
 }
 .swiper-slide .project-item img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 0.5s ease;
   display: block;
   width: 100%;
   cursor: pointer;
+}
+.swiper-slide .project-item img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 .swiper-slide .project-item .thumb-inner {
   visibility: hidden;

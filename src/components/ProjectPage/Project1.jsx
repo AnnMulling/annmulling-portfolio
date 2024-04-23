@@ -33,8 +33,8 @@ export default function Project1({ projects }) {
                 {filteredProj.map((project) => (
 
                     <SwiperSlide key={project.id}>
-                        <h2 style={{ marginLeft: 5 }}>{project.name}</h2>
                         <div className="project-item" >
+                            <h2>{project.name}</h2>
                             <a href={project.url[1].url} target="_blank">
                                 <img src={project.img} alt="project" />
                             </a>
