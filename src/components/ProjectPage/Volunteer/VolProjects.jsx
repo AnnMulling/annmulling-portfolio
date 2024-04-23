@@ -1,8 +1,8 @@
 
 
 //icons
-import { CgMenuGridR } from "react-icons/cg";
-import { TfiLayoutMenuV } from "react-icons/tfi";
+import { GoListUnordered } from "react-icons/go";
+import { PiSlideshowFill } from "react-icons/pi";
 
 //css & other
 import DropDown from "../../Navbar/Dropdown";
@@ -24,8 +24,8 @@ export default function VolProjects({ filterDesign, filterDev, showAll, setGrid,
                         </ul>
                     </div>
                     <div className="views">
-                        <div onClick={setGrid}><CgMenuGridR /></div>
-                        <div onClick={setList}><TfiLayoutMenuV/></div>
+                        <div onClick={setGrid}><PiSlideshowFill /></div>
+                        <div onClick={setList}><GoListUnordered /></div>
                     </div>
             </div>
             <div className="work-content">
