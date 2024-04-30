@@ -9,12 +9,15 @@ import { FaGithub as FaGithubjs } from "react-icons/fa";
 import { MdWeb as MdWebjs } from "react-icons/md";
 import { FaHtml5 as FaHtml5js } from "react-icons/fa";
 import { FaCss3Alt  as FaCss3Altjs} from "react-icons/fa";
+import { SiTypescript as SiTypescriptjs } from "react-icons/si";
+import { TbBrandNextjs as Next } from "react-icons/tb";
 
 //imgs
 import annbnb from '../../assets/images/projects/AnnBnb.png';
 import cultivate from '../../assets/images/projects/Cultivate.png';
 import sketchy from '../../assets/images/projects/Sketchy.png';
 import doordash from '../../assets/images/projects/DoorDash.png';
+import soon from '../../assets/images/projects/soon.png';
 
 
 export const projects = [
@@ -170,4 +173,32 @@ export const projects = [
         ],
         development: true,
     },
+    {
+        id: 5,
+        name: "Heal Me (Non-profit Organization)",
+        url: [
+            {
+                id: 1,
+                icon: FaGithubjs,
+                url: "https://github.com/Heal-Me-Non-Profit-Organisation",
+            },
+            {
+                id: 2,
+                icon: MdWebjs,
+                url: "",
+            }
+        ],
+        img: soon,
+        description: "Collaborate with other engineers to build the website for people in need ",
+        techStack: [
+            {
+                id: 1,
+                name: SiTypescriptjs
+            },
+            {
+                id: 2,
+                name: Next
+            }
+        ]
+    }
 ]
