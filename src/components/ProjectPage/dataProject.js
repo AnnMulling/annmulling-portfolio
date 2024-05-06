@@ -12,12 +12,13 @@ import { FaCss3Alt  as FaCss3Altjs} from "react-icons/fa";
 import { SiTypescript as SiTypescriptjs } from "react-icons/si";
 import { TbBrandNextjs as Next } from "react-icons/tb";
 
-//imgs
+//imgess
 import annbnb from '../../assets/images/projects/AnnBnb.png';
 import cultivate from '../../assets/images/projects/Cultivate.png';
 import sketchy from '../../assets/images/projects/Sketchy.png';
 import doordash from '../../assets/images/projects/DoorDash.png';
 import soon from '../../assets/images/projects/soon.png';
+import healme from '../../assets/images/projects/healMe.png';
 
 
 export const projects = [
@@ -188,8 +189,8 @@ export const projects = [
                 url: "",
             }
         ],
-        img: soon,
-        description: "Collaborate with other engineers to build the website for people in need ",
+        img: healme,
+        description: "Team up with engineers from across the globe to construct a website serving underserved communities ",
         techStack: [
             {
                 id: 1,
