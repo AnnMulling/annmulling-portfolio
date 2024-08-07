@@ -95,7 +95,7 @@ ul li {
 }
 
 
- @include keyframes(spin){
+ @include keyframes('spin'){
     from {
         transform: rotateY(0deg)
     }
