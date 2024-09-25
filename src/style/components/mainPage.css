@@ -30,51 +30,6 @@ keyframes & animations
   width: 100%;
   text-align: center;
 }
-.main-page .main-page-info h1::before {
-  content: "Hi there, I am";
-  display: block;
-  position: relative;
-  right: 25%;
-  font-family: "Quicksand";
-  font-size: 1rem;
-  color: #000000;
-  font-weight: 400;
-  -webkit-font-family: "Quicksand";
-  -moz-font-family: "Quicksand";
-  -ms-font-family: "Quicksand";
-  -webkit-font-size: 1rem;
-  -moz-font-size: 1rem;
-  -ms-font-size: 1rem;
-  -webkit-color: #000000;
-  -moz-color: #000000;
-  -ms-color: #000000;
-  -webkit-font-weight: 400;
-  -moz-font-weight: 400;
-  -ms-font-weight: 400;
-}
-.main-page .main-page-info h1::after {
-  content: "a Jr Software Engineer";
-  display: block;
-  position: relative;
-  left: 25%;
-  margin-top: 1rem;
-  font-family: "Quicksand";
-  font-size: 1rem;
-  color: #000000;
-  font-weight: 400;
-  -webkit-font-family: "Quicksand";
-  -moz-font-family: "Quicksand";
-  -ms-font-family: "Quicksand";
-  -webkit-font-size: 1rem;
-  -moz-font-size: 1rem;
-  -ms-font-size: 1rem;
-  -webkit-color: #000000;
-  -moz-color: #000000;
-  -ms-color: #000000;
-  -webkit-font-weight: 400;
-  -moz-font-weight: 400;
-  -ms-font-weight: 400;
-}
 @keyframes fade-in-down {
   from {
     opacity: 0;

@@ -95,6 +95,14 @@ ul li {
   }
 
 
+  //left titile
+.left-title {
+    position: absolute;
+    @include font($detail-font, 1rem, $base-black);
+    @include transform(rotate, -90deg);
+}
+
+
 .line-bt {
     width: 100%;
     height: 1px;

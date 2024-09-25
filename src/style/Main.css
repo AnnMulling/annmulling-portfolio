@@ -94,6 +94,35 @@ ul li {
     transform: rotateY(360deg);
   }
 }
+.left-title {
+  position: absolute;
+  font-family: "Quicksand";
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
+  -webkit-font-size: 1rem;
+  -moz-font-size: 1rem;
+  -ms-font-size: 1rem;
+  -webkit-color: #000000;
+  -moz-color: #000000;
+  -ms-color: #000000;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
+  transform: rotate -90deg;
+  /* Safari */
+  -webkit-transform: rotate -90deg;
+  /* Firefox */
+  -moz-transform: rotate -90deg;
+  /* IE */
+  -ms-transform: rotate -90deg;
+  /* Opera */
+  -o-transform: rotate -90deg;
+}
+
 .line-bt {
   width: 100%;
   height: 1px;

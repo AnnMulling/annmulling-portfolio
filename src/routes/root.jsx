@@ -10,7 +10,8 @@ export default function Root() {
     return (
       <>
 
-        <div className="line-left"></div>
+        <h1 className="left-title"> A Junior Software Engineer</h1>
+        <div className="line-left"> </div>
         <Nav />
         <MainPage />
         <div className="line-bt"></div>

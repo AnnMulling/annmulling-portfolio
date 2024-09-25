@@ -11,26 +11,26 @@
         height: 55vh;
         width: 100%;
         text-align: center;
-            h1 {
+            // h1 {
 
-                &::before {
-                    content: 'Hi there, I am';
-                    display: block;
-                    position: relative;
-                    right: 25%;
-                    // background-color: rgb(71, 74, 74);
-                    @include font($detail-font, 1rem, $base-black);
-                }
-                &::after {
-                    content: 'a Jr Software Engineer';
-                    display: block;
-                    position: relative;
-                    left: 25%;
-                    margin-top: 1rem;
-                    // background-color: rgb(41, 87, 87);
-                    @include font($detail-font, 1rem, $base-black);
-                    }
-            }
+            //     // &::before {
+            //     //     content: 'Hi there, I am';
+            //     //     display: block;
+            //     //     position: relative;
+            //     //     right: 25%;
+            //     //     // background-color: rgb(71, 74, 74);
+            //     //     @include font($detail-font, 1rem, $base-black);
+            //     // }
+            //     // &::after {
+            //     //     content: 'a Jr Software Engineer';
+            //     //     display: block;
+            //     //     position: relative;
+            //     //     left: 25%;
+            //     //     margin-top: 1rem;
+            //     //     // background-color: rgb(41, 87, 87);
+            //     //     @include font($detail-font, 1rem, $base-black);
+            //     //     }
+            // }
 
     }
     @include animations('fade-in-down 1.5s ease');
