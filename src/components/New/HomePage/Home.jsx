@@ -1,13 +1,15 @@
-
+import  Nav from '../../Navbar/Nav';
 //css & other
 import "../../../style/components/New/homePage.css"
 
 export default function HomePage() {
     return (
         <>
-        <div className="home-hero">
-            <h1>Hello new style</h1>
-        </div>
+            <div className="home-hero">
+                <Nav />
+                <h1>AM</h1>
+            </div>
         </>
+
     )
 }
