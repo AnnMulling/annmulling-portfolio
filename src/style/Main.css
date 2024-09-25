@@ -5,25 +5,20 @@
 keyframes & animations
 */
 html {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
-  background-color: #464646;
+  background-color: #f0eeea;
   padding: 0;
   margin: 0;
-  font-family: "Quicksand";
 }
 
 #root {
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  background: radial-gradient(circle at 45% 60%, rgb(53, 52, 52) 0%, rgb(23, 23, 23) 99.4%);
-  border-radius: 1rem;
-  padding: 4em;
-  margin: 3em;
-  min-height: 100vh;
-  width: 80vw;
+  background-color: #f0eeea;
+  color: #000000;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .link:focus, .link:hover, .link:visited, .link:link, .link:active, a:focus, a:hover, a:visited, a:link, a:active {
@@ -40,7 +35,7 @@ ul li {
   cursor: pointer;
   font-family: "Quicksand";
   font-size: 1rem;
-  color: #F6F6F6;
+  color: #000000;
   font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
@@ -48,9 +43,9 @@ ul li {
   -webkit-font-size: 1rem;
   -moz-font-size: 1rem;
   -ms-font-size: 1rem;
-  -webkit-color: #F6F6F6;
-  -moz-color: #F6F6F6;
-  -ms-color: #F6F6F6;
+  -webkit-color: #000000;
+  -moz-color: #000000;
+  -ms-color: #000000;
   -webkit-font-weight: 400;
   -moz-font-weight: 400;
   -ms-font-weight: 400;

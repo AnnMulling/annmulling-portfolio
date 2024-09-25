@@ -38,13 +38,13 @@ keyframes & animations
   -ms-font-weight: 400;
 }
 .about-me-page .about-detail h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 5.5rem;
   color: #F6F6F6;
   font-weight: 400;
-  -webkit-font-family: "Roboto", sans-serif;
-  -moz-font-family: "Roboto", sans-serif;
-  -ms-font-family: "Roboto", sans-serif;
+  -webkit-font-family: "Open Sans", sans-serif;
+  -moz-font-family: "Open Sans", sans-serif;
+  -ms-font-family: "Open Sans", sans-serif;
   -webkit-font-size: 5.5rem;
   -moz-font-size: 5.5rem;
   -ms-font-size: 5.5rem;
@@ -128,13 +128,13 @@ keyframes & animations
 }
 .about-me-page .about-detail .qualification-box h2 {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: #464646;
   font-weight: 400;
-  -webkit-font-family: "Roboto", sans-serif;
-  -moz-font-family: "Roboto", sans-serif;
-  -ms-font-family: "Roboto", sans-serif;
+  -webkit-font-family: "Open Sans", sans-serif;
+  -moz-font-family: "Open Sans", sans-serif;
+  -ms-font-family: "Open Sans", sans-serif;
   -webkit-font-size: 2rem;
   -moz-font-size: 2rem;
   -ms-font-size: 2rem;

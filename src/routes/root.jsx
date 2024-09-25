@@ -9,7 +9,7 @@ import '../style/Main.css'
 export default function Root() {
     return (
       <>
-        <Nav />
+        {/* <Nav /> */}
         <MainPage />
 
       </>

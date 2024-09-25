@@ -3,30 +3,21 @@
 
 
 html {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
-    background-color: $base-green;
+    background-color: $backgroud;
     padding: 0;
     margin: 0;
-    font-family: $detail-font;
-
 
 }
 
 #root {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    background: radial-gradient(circle at 45% 60%, rgb(53, 52, 52) 0%, rgb(23, 23, 23) 99.4%);
-    border-radius: 1rem;
-    padding: 4em;
-    margin: 3em;
-    min-height: 100vh;
-    width: 80vw;
-
+    background-color: $backgroud;
+    color: $base-black;
+    min-height: fit-content;
+    width: 100%;
+    padding: 0;
+    margin:  0;
 }
-
 
 
 
@@ -47,7 +38,7 @@ ul li {
 
 .nav-container {
     cursor: pointer;
-    @include font($detail-font, 1rem, $base-white);
+    @include font($detail-font, 1rem, $base-black);
 
     ul {
         display: flex;
