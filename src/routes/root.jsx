@@ -9,9 +9,11 @@ import '../style/Main.css'
 export default function Root() {
     return (
       <>
-        {/* <Nav /> */}
-        <MainPage />
 
+        <div className="line-left"></div>
+        <Nav />
+        <MainPage />
+        <div className="line-bt"></div>
       </>
     );
   }

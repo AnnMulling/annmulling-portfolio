@@ -12,13 +12,10 @@ html {
 }
 
 #root {
-  background-color: #f0eeea;
   color: #000000;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .link:focus, .link:hover, .link:visited, .link:link, .link:active, a:focus, a:hover, a:visited, a:link, a:active {
@@ -32,6 +29,7 @@ ul li {
 }
 
 .nav-container {
+  margin-right: 3rem;
   cursor: pointer;
   font-family: "Quicksand";
   font-size: 1rem;
@@ -95,4 +93,16 @@ ul li {
   to {
     transform: rotateY(360deg);
   }
+}
+.line-bt {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.line-left {
+  border-left: 1px solid black;
+  height: 100%;
+  position: absolute;
+  margin-left: 5rem;
 }/*# sourceMappingURL=Main.css.map */
