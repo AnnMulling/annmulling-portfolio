@@ -49,21 +49,8 @@ keyframes & animations
 };
 
 
-@mixin transform($action, $degree: null) {
-    @debug $action;
-    @debug $degree;
+@mixin transform($action) {
 
-    @if $degree != null {
-        transform: $action($degree);
-        /* Safari */
-        -webkit-transform: $action($degree);
-        /* Firefox */
-        -moz-transform: $action($degree);
-        /* IE */
-        -ms-transform: $action($degree);
-        /* Opera */
-        -o-transform: $action($degree);
-    } @else {
         transform: $action;
         /* Safari */
         -webkit-transform: $action;
@@ -73,5 +60,5 @@ keyframes & animations
         -ms-transform: $action;
         /* Opera */
         -o-transform: $action;
-    }
+
 }

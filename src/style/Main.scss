@@ -95,11 +95,29 @@ ul li {
   }
 
 
-  //left titile
-.left-title {
+.initial-home-btn {
+    cursor: pointer;
+    margin-top: 1rem;
+    left: 3%;
     position: absolute;
-    @include font($detail-font, 1rem, $base-black);
-    @include transform(rotate, -90deg);
+    @include font($title-font, 2rem, $base-white);
+    span {
+        padding: 1.5rem;
+        background-color: black;
+        border-radius: 50%;
+    }
+}
+
+  //left titile
+.aside-left {
+    position: absolute;
+    top: 50%;
+    left: -6%;
+    h1 {
+
+        @include font($detail-font, 1.3rem, $base-black);
+    }
+    @include transform(rotate(-90deg));
 }
 
 

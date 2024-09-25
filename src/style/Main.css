@@ -94,33 +94,65 @@ ul li {
     transform: rotateY(360deg);
   }
 }
-.left-title {
+.initial-home-btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  left: 3%;
   position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #F6F6F6;
+  font-weight: 400;
+  -webkit-font-family: "Open Sans", sans-serif;
+  -moz-font-family: "Open Sans", sans-serif;
+  -ms-font-family: "Open Sans", sans-serif;
+  -webkit-font-size: 2rem;
+  -moz-font-size: 2rem;
+  -ms-font-size: 2rem;
+  -webkit-color: #F6F6F6;
+  -moz-color: #F6F6F6;
+  -ms-color: #F6F6F6;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
+}
+.initial-home-btn span {
+  padding: 1.5rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.aside-left {
+  position: absolute;
+  top: 50%;
+  left: -6%;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+.aside-left h1 {
   font-family: "Quicksand";
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #000000;
   font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
   -ms-font-family: "Quicksand";
-  -webkit-font-size: 1rem;
-  -moz-font-size: 1rem;
-  -ms-font-size: 1rem;
+  -webkit-font-size: 1.3rem;
+  -moz-font-size: 1.3rem;
+  -ms-font-size: 1.3rem;
   -webkit-color: #000000;
   -moz-color: #000000;
   -ms-color: #000000;
   -webkit-font-weight: 400;
   -moz-font-weight: 400;
   -ms-font-weight: 400;
-  transform: rotate -90deg;
-  /* Safari */
-  -webkit-transform: rotate -90deg;
-  /* Firefox */
-  -moz-transform: rotate -90deg;
-  /* IE */
-  -ms-transform: rotate -90deg;
-  /* Opera */
-  -o-transform: rotate -90deg;
 }
 
 .line-bt {
