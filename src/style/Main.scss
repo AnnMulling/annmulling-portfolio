@@ -12,9 +12,8 @@ html {
 #root {
     color: $base-black;
     width: 100%;
-    padding-left: 0;
-    margin-left:  0;
-
+    padding: 0;
+    margin:  0;
 }
 
 
@@ -33,6 +32,16 @@ ul li {
 }
 
 
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide{
+    overflow: scroll;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+}
 
 .nav-container {
     margin-right: 3rem;
@@ -95,11 +104,11 @@ ul li {
   }
 
 
-.initial-home-btn {
-    cursor: pointer;
-    margin-top: 1rem;
-    left: 3%;
+  .initial-home-btn {
     position: absolute;
+    top: 10%;
+    left: 3%;
+    cursor: pointer;
     @include font($title-font, 2rem, $base-white);
     span {
         padding: 1.5rem;
@@ -110,9 +119,10 @@ ul li {
 
   //left titile
 .aside-left {
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: -6%;
+    top: 0%;
+    left: 20%;
     h1 {
 
         @include font($detail-font, 1.3rem, $base-black);
@@ -131,4 +141,6 @@ ul li {
     height: 100%;
     position: absolute;
     margin-left: 5rem;
+    z-index: 2;
+    overflow: hidden;
 }

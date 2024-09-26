@@ -14,8 +14,8 @@ html {
 #root {
   color: #000000;
   width: 100%;
-  padding-left: 0;
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .link:focus, .link:hover, .link:visited, .link:link, .link:active, a:focus, a:hover, a:visited, a:link, a:active {
@@ -26,6 +26,19 @@ html {
 /* Nav bar*/
 ul li {
   list-style-type: none;
+}
+
+.swiper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.swiper-slide {
+  overflow: scroll;
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
 }
 
 .nav-container {
@@ -95,10 +108,10 @@ ul li {
   }
 }
 .initial-home-btn {
-  cursor: pointer;
-  margin-top: 1rem;
-  left: 3%;
   position: absolute;
+  top: 10%;
+  left: 3%;
+  cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: #F6F6F6;
@@ -123,9 +136,10 @@ ul li {
 }
 
 .aside-left {
+  height: 100%;
   position: absolute;
-  top: 50%;
-  left: -6%;
+  top: 0%;
+  left: 20%;
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -166,4 +180,6 @@ ul li {
   height: 100%;
   position: absolute;
   margin-left: 5rem;
+  z-index: 2;
+  overflow: hidden;
 }/*# sourceMappingURL=Main.css.map */
