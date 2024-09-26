@@ -3,30 +3,18 @@
 
 
 html {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
-    background-color: $base-green;
+    background-color: $backgroud;
     padding: 0;
     margin: 0;
-    font-family: $detail-font;
-
-
 }
 
 #root {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    background: radial-gradient(circle at 45% 60%, rgb(53, 52, 52) 0%, rgb(23, 23, 23) 99.4%);
-    border-radius: 1rem;
-    padding: 4em;
-    margin: 3em;
-    min-height: 100vh;
-    width: 80vw;
-
+    color: $base-black;
+    width: 100%;
+    padding: 0;
+    margin:  0;
 }
-
 
 
 
@@ -44,10 +32,21 @@ ul li {
 }
 
 
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide{
+    overflow: scroll;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+}
 
 .nav-container {
+    margin-right: 3rem;
     cursor: pointer;
-    @include font($detail-font, 1rem, $base-white);
+    @include font($detail-font, 1rem, $base-black);
 
     ul {
         display: flex;
@@ -103,3 +102,45 @@ ul li {
         transform: rotateY(360deg)
     }
   }
+
+
+  .initial-home-btn {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    cursor: pointer;
+    @include font($title-font, 2rem, $base-white);
+    span {
+        padding: 1.5rem;
+        background-color: black;
+        border-radius: 50%;
+    }
+}
+
+  //left titile
+.aside-left {
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    h1 {
+
+        @include font($detail-font, 1.3rem, $base-black);
+    }
+    @include transform(rotate(-90deg));
+}
+
+
+.line-bt {
+    width: 100%;
+    height: 1px;
+    background-color: $base-black;
+}
+.line-left {
+    border-left: 1px solid black;
+    height: 100%;
+    position: absolute;
+    margin-left: 5rem;
+    z-index: 2;
+    overflow: hidden;
+}

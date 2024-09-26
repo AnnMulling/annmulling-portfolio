@@ -47,3 +47,18 @@ keyframes & animations
         @content;
     }
 };
+
+
+@mixin transform($action) {
+
+        transform: $action;
+        /* Safari */
+        -webkit-transform: $action;
+        /* Firefox */
+        -moz-transform: $action;
+        /* IE */
+        -ms-transform: $action;
+        /* Opera */
+        -o-transform: $action;
+
+}

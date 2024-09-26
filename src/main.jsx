@@ -12,7 +12,7 @@ import Work from './components/ProjectPage/Project.jsx';
 
 import './style/Main.css'
 import Project1 from './components/ProjectPage/Project1.jsx';
-import HomePage from './components/New/HomePage/Home.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -37,10 +37,6 @@ const router = createBrowserRouter([
     element: <Project1 />
 
   },
-  {
-    path: "/testMain",
-    element: <HomePage />
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

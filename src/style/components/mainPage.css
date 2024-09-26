@@ -5,76 +5,30 @@
 keyframes & animations
 */
 .main-page {
-  margin-left: 1rem;
-  position: relative;
-  overflow: hidden;
-  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
   font-size: 4rem;
-  color: #F6F6F6;
+  color: #000000;
   font-weight: 400;
-  -webkit-font-family: "Roboto", sans-serif;
-  -moz-font-family: "Roboto", sans-serif;
-  -ms-font-family: "Roboto", sans-serif;
+  -webkit-font-family: "Open Sans", sans-serif;
+  -moz-font-family: "Open Sans", sans-serif;
+  -ms-font-family: "Open Sans", sans-serif;
   -webkit-font-size: 4rem;
   -moz-font-size: 4rem;
   -ms-font-size: 4rem;
-  -webkit-color: #F6F6F6;
-  -moz-color: #F6F6F6;
-  -ms-color: #F6F6F6;
+  -webkit-color: #000000;
+  -moz-color: #000000;
+  -ms-color: #000000;
   -webkit-font-weight: 400;
   -moz-font-weight: 400;
   -ms-font-weight: 400;
   animation: fade-in-down 1.5s ease;
 }
 .main-page .main-page-info {
+  margin-top: 15rem;
+  height: 55vh;
   width: 100%;
   text-align: center;
-  margin: 20% 0;
-}
-.main-page .main-page-info h1::before {
-  content: "Hi there, I am";
-  display: block;
-  position: relative;
-  right: 25%;
-  font-family: "Quicksand";
-  font-size: 1rem;
-  color: #F6F6F6;
-  font-weight: 400;
-  -webkit-font-family: "Quicksand";
-  -moz-font-family: "Quicksand";
-  -ms-font-family: "Quicksand";
-  -webkit-font-size: 1rem;
-  -moz-font-size: 1rem;
-  -ms-font-size: 1rem;
-  -webkit-color: #F6F6F6;
-  -moz-color: #F6F6F6;
-  -ms-color: #F6F6F6;
-  -webkit-font-weight: 400;
-  -moz-font-weight: 400;
-  -ms-font-weight: 400;
-}
-.main-page .main-page-info h1::after {
-  content: "a Jr Software Engineer";
-  display: block;
-  position: relative;
-  left: 25%;
-  margin-top: 1rem;
-  font-family: "Quicksand";
-  font-size: 1rem;
-  color: #F6F6F6;
-  font-weight: 400;
-  -webkit-font-family: "Quicksand";
-  -moz-font-family: "Quicksand";
-  -ms-font-family: "Quicksand";
-  -webkit-font-size: 1rem;
-  -moz-font-size: 1rem;
-  -ms-font-size: 1rem;
-  -webkit-color: #F6F6F6;
-  -moz-color: #F6F6F6;
-  -ms-color: #F6F6F6;
-  -webkit-font-weight: 400;
-  -moz-font-weight: 400;
-  -ms-font-weight: 400;
 }
 @keyframes fade-in-down {
   from {
