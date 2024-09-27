@@ -10,12 +10,12 @@ html {
 }
 
 #root {
-    color: $base-black;
-    width: 100%;
+    // display: flex;
+    // flex-direction: column;
     padding: 0;
     margin:  0;
-}
 
+}
 
 
 .link, a {
@@ -26,121 +26,26 @@ html {
 
 }
 
-/* Nav bar*/
-ul li {
-    list-style-type: none;
-}
 
-
-.swiper {
-    width: 100%;
-    height: fit-content;
-}
-.swiper-slide{
-    overflow: scroll;
-    text-align: center;
-    background-color: transparent;
-    padding: 10px;
-}
-
-.nav-container {
-    margin-right: 3rem;
-    cursor: pointer;
-    @include font($detail-font, 1rem, $base-black);
-
-    ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        // margin-right: 2rem;
-
-        li {
-            display: flex;
-            margin-right: 2rem;
-            .link {
-                padding: .5rem;
-                position: relative;
-                &::after {
-                    visibility: hidden;
-                    content: "";
-                    color: rgb(255, 255, 255);
-                    display: block;
-                    position: relative;
-                    width: 100%;
-                    transform: scaleX(0);
-                    border-radius: 10px;
-                    height: 0.08rem;
-                    bottom: 0;
-                    left: 0;
-                    background-color: $hover-color;
-                    transform-origin: bottom right;
-                    transition: transform 0.3s ease-out;
-                }
-                &:hover {
-                    &::after {
-                        visibility: visible;
-                        transform: scaleX(1);
-                        transform-origin: bottom left;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-.globe {
-    @include animations('spin 3s linear infinite')
-}
-
-
- @include keyframes('spin'){
-    from {
-        transform: rotateY(0deg)
-    }
-    to {
-        transform: rotateY(360deg)
-    }
-  }
-
-
-  .initial-home-btn {
-    position: absolute;
-    top: 10%;
+.initial-home-btn {
+    top: 5%;
     left: 3%;
+    position: fixed;
     cursor: pointer;
     @include font($title-font, 2rem, $base-white);
-    span {
+    animation: spin 3s linear infinite;
+
+    .initial-tag {
         padding: 1.5rem;
         background-color: black;
         border-radius: 50%;
     }
-}
-
-  //left titile
-.aside-left {
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 20%;
-    h1 {
-
-        @include font($detail-font, 1.3rem, $base-black);
+    @keyframes spin {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
     }
-    @include transform(rotate(-90deg));
-}
-
-
-.line-bt {
-    width: 100%;
-    height: 1px;
-    background-color: $base-black;
-}
-.line-left {
-    border-left: 1px solid black;
-    height: 100%;
-    position: absolute;
-    margin-left: 5rem;
-    z-index: 2;
-    overflow: hidden;
 }

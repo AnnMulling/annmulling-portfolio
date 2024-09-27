@@ -5,7 +5,8 @@
 keyframes & animations
 */
 .main-page {
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   color: #000000;
@@ -22,13 +23,46 @@ keyframes & animations
   -webkit-font-weight: 400;
   -moz-font-weight: 400;
   -ms-font-weight: 400;
+  border-bottom: 1px solid black;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
   animation: fade-in-down 1.5s ease;
 }
-.main-page .main-page-info {
-  margin-top: 15rem;
-  height: 55vh;
-  width: 100%;
+
+.aside-left {
+  border-bottom: 1px solid black;
   text-align: center;
+  width: 100%;
+  left: 0%;
+  position: absolute;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+.aside-left h1 {
+  font-family: "Quicksand";
+  font-size: 1.3rem;
+  color: #000000;
+  font-weight: 400;
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
+  -webkit-font-size: 1.3rem;
+  -moz-font-size: 1.3rem;
+  -ms-font-size: 1.3rem;
+  -webkit-color: #000000;
+  -moz-color: #000000;
+  -ms-color: #000000;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
 }
 @keyframes fade-in-down {
   from {

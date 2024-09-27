@@ -3,41 +3,35 @@
 
 
 .main-page {
-    margin: 0 auto;
-    // overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+
     @include font($title-font, 4rem, $base-black);
-    .main-page-info {
-        margin-top: 15rem;
-        height: 55vh;
-        width: 100%;
+
+    // .main-page-info {
+        border-bottom: 1px solid black;
+        height: fit-content;
         text-align: center;
-            // h1 {
+    // }
 
-            //     // &::before {
-            //     //     content: 'Hi there, I am';
-            //     //     display: block;
-            //     //     position: relative;
-            //     //     right: 25%;
-            //     //     // background-color: rgb(71, 74, 74);
-            //     //     @include font($detail-font, 1rem, $base-black);
-            //     // }
-            //     // &::after {
-            //     //     content: 'a Jr Software Engineer';
-            //     //     display: block;
-            //     //     position: relative;
-            //     //     left: 25%;
-            //     //     margin-top: 1rem;
-            //     //     // background-color: rgb(41, 87, 87);
-            //     //     @include font($detail-font, 1rem, $base-black);
-            //     //     }
-            // }
 
-    }
     @include animations('fade-in-down 1.5s ease');
-
-
 }
 
+//left titile
+.aside-left {
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 100%;
+  left: 0%;
+  position: absolute;
+
+  h1 {
+
+      @include font($detail-font, 1.3rem, $base-black);
+  }
+  @include transform(rotate(-90deg));
+}
 
 
 //every element
@@ -51,3 +45,19 @@
         transform: translateY(0);
     }
 }
+
+
+
+// .line-bt {
+//     width: 100%;
+//     height: 1px;
+//     background-color: $base-black;
+// }
+// .line-left {
+//     border-left: 1px solid black;
+//     height: 100%;
+//     position: absolute;
+//     left: 7%;
+//     margin-top: 8rem;
+
+// }

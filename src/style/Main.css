@@ -12,8 +12,6 @@ html {
 }
 
 #root {
-  color: #000000;
-  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -23,94 +21,10 @@ html {
   color: inherit;
 }
 
-/* Nav bar*/
-ul li {
-  list-style-type: none;
-}
-
-.swiper {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.swiper-slide {
-  overflow: scroll;
-  text-align: center;
-  background-color: transparent;
-  padding: 10px;
-}
-
-.nav-container {
-  margin-right: 3rem;
-  cursor: pointer;
-  font-family: "Quicksand";
-  font-size: 1rem;
-  color: #000000;
-  font-weight: 400;
-  -webkit-font-family: "Quicksand";
-  -moz-font-family: "Quicksand";
-  -ms-font-family: "Quicksand";
-  -webkit-font-size: 1rem;
-  -moz-font-size: 1rem;
-  -ms-font-size: 1rem;
-  -webkit-color: #000000;
-  -moz-color: #000000;
-  -ms-color: #000000;
-  -webkit-font-weight: 400;
-  -moz-font-weight: 400;
-  -ms-font-weight: 400;
-}
-.nav-container ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.nav-container ul li {
-  display: flex;
-  margin-right: 2rem;
-}
-.nav-container ul li .link {
-  padding: 0.5rem;
-  position: relative;
-}
-.nav-container ul li .link::after {
-  visibility: hidden;
-  content: "";
-  color: rgb(255, 255, 255);
-  display: block;
-  position: relative;
-  width: 100%;
-  transform: scaleX(0);
-  border-radius: 10px;
-  height: 0.08rem;
-  bottom: 0;
-  left: 0;
-  background-color: #C3773D;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-.nav-container ul li .link:hover::after {
-  visibility: visible;
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.globe {
-  animation: spin 3s linear infinite;
-}
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
 .initial-home-btn {
-  position: absolute;
-  top: 10%;
+  top: 5%;
   left: 3%;
+  position: fixed;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
@@ -128,58 +42,18 @@ ul li {
   -webkit-font-weight: 400;
   -moz-font-weight: 400;
   -ms-font-weight: 400;
+  animation: spin 3s linear infinite;
 }
-.initial-home-btn span {
+.initial-home-btn .initial-tag {
   padding: 1.5rem;
   background-color: black;
   border-radius: 50%;
 }
-
-.aside-left {
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  left: 20%;
-  transform: rotate(-90deg);
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
-}
-.aside-left h1 {
-  font-family: "Quicksand";
-  font-size: 1.3rem;
-  color: #000000;
-  font-weight: 400;
-  -webkit-font-family: "Quicksand";
-  -moz-font-family: "Quicksand";
-  -ms-font-family: "Quicksand";
-  -webkit-font-size: 1.3rem;
-  -moz-font-size: 1.3rem;
-  -ms-font-size: 1.3rem;
-  -webkit-color: #000000;
-  -moz-color: #000000;
-  -ms-color: #000000;
-  -webkit-font-weight: 400;
-  -moz-font-weight: 400;
-  -ms-font-weight: 400;
-}
-
-.line-bt {
-  width: 100%;
-  height: 1px;
-  background-color: #000000;
-}
-
-.line-left {
-  border-left: 1px solid black;
-  height: 100%;
-  position: absolute;
-  margin-left: 5rem;
-  z-index: 2;
-  overflow: hidden;
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }/*# sourceMappingURL=Main.css.map */
