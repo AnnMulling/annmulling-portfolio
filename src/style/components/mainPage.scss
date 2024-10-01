@@ -3,35 +3,34 @@
 
 
 .main-page {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid black;
+    margin-top: 10rem;
     min-height: 100%;
-
     @include font($title-font, 4rem, $base-black);
-
-    // .main-page-info {
-        border-bottom: 1px solid black;
-        height: fit-content;
-        text-align: center;
-    // }
-
-
     @include animations('fade-in-down 1.5s ease');
+
+
+    //left titile
+    .aside-left {
+    //   border-bottom: 1px solid black;
+      text-align: center;
+
+      h1 {
+
+          @include font($detail-font, 1.3rem, $base-black);
+      }
+
+      .bottom-line {
+        width: 100%;
+        height: 1px;
+        background-color: $base-black;
+      }
+      @include transform(rotate(-90deg));
+    }
 }
 
-//left titile
-.aside-left {
-  border-bottom: 1px solid black;
-  text-align: center;
-  width: 100%;
-  left: 0%;
-  position: absolute;
-
-  h1 {
-
-      @include font($detail-font, 1.3rem, $base-black);
-  }
-  @include transform(rotate(-90deg));
-}
 
 
 //every element
@@ -45,19 +44,3 @@
         transform: translateY(0);
     }
 }
-
-
-
-// .line-bt {
-//     width: 100%;
-//     height: 1px;
-//     background-color: $base-black;
-// }
-// .line-left {
-//     border-left: 1px solid black;
-//     height: 100%;
-//     position: absolute;
-//     left: 7%;
-//     margin-top: 8rem;
-
-// }
