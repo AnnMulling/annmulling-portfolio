@@ -5,7 +5,11 @@
 keyframes & animations
 */
 .main-page {
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50px 90px 120px;
+  border-bottom: 1px solid black;
+  margin-top: 10rem;
+  min-height: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   color: #000000;
@@ -24,11 +28,49 @@ keyframes & animations
   -ms-font-weight: 400;
   animation: fade-in-down 1.5s ease;
 }
-.main-page .main-page-info {
-  margin-top: 15rem;
-  height: 55vh;
-  width: 100%;
+.main-page .aside-left {
   text-align: center;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+.main-page .aside-left h1 {
+  font-family: "Quicksand";
+  font-size: 1.3rem;
+  color: #000000;
+  font-weight: 400;
+  -webkit-font-family: "Quicksand";
+  -moz-font-family: "Quicksand";
+  -ms-font-family: "Quicksand";
+  -webkit-font-size: 1.3rem;
+  -moz-font-size: 1.3rem;
+  -ms-font-size: 1.3rem;
+  -webkit-color: #000000;
+  -moz-color: #000000;
+  -ms-color: #000000;
+  -webkit-font-weight: 400;
+  -moz-font-weight: 400;
+  -ms-font-weight: 400;
+}
+.main-page .bottom-line {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
 }
 @keyframes fade-in-down {
   from {

@@ -16,34 +16,12 @@ import { Pagination } from 'swiper/modules';
 export default function Root() {
     return (
       <>
-        <div className="aside-left">
-          <h1> A Junior Software Engineer</h1>
-        </div>
-
         <div className="initial-home-btn">
               <Link to="/" className="link">
-                  <span>AM</span>
+                  <span className="initial-tag">AM</span>
               </Link>
         </div>
-        <div className="line-left">
-
-        </div>
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-
-          <SwiperSlide> <MainPage /> </SwiperSlide>
-          <SwiperSlide> <AboutMe /> </SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-        </Swiper>
-
-
-
-        <div className="line-bt"></div>
+        <MainPage />
       </>
 
     );
