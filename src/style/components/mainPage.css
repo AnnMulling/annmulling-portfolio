@@ -6,7 +6,7 @@ keyframes & animations
 */
 .main-page {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 50px 90px 120px;
   border-bottom: 1px solid black;
   margin-top: 10rem;
   min-height: 100%;
@@ -58,10 +58,19 @@ keyframes & animations
   -moz-font-weight: 400;
   -ms-font-weight: 400;
 }
-.main-page .aside-left .bottom-line {
+.main-page .bottom-line {
   width: 100%;
   height: 1px;
   background-color: #000000;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
 }
 @keyframes fade-in-down {
   from {

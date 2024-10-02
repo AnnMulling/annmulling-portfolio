@@ -4,7 +4,7 @@
 
 .main-page {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 50px 90px 120px;
     border-bottom: 1px solid black;
     margin-top: 10rem;
     min-height: 100%;
@@ -14,19 +14,17 @@
 
     //left titile
     .aside-left {
-    //   border-bottom: 1px solid black;
       text-align: center;
-
       h1 {
-
           @include font($detail-font, 1.3rem, $base-black);
       }
+      @include transform(rotate(-90deg));
 
-      .bottom-line {
-        width: 100%;
-        height: 1px;
-        background-color: $base-black;
-      }
+    }
+    .bottom-line {
+      width: 100%;
+      height: 1px;
+      background-color: $base-black;
       @include transform(rotate(-90deg));
     }
 }

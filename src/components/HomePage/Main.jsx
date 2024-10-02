@@ -11,11 +11,11 @@ export default function MainPage() {
             <div className="main-page">
                 <div className="aside-left">
                     <h1> A Junior Software Engineer</h1>
-                    <div className="bottom-line"></div>
+
                 </div>
+                <div className="bottom-line"></div>
                 <div className="main-page-info">
                     <h1>Ann Mulling</h1>
-
                 </div>
                 {/* <SocialTag /> */}
             </div>
