@@ -16,12 +16,14 @@ import { Pagination } from 'swiper/modules';
 export default function Root() {
     return (
       <>
+        <div className="aside-line"></div>
         <div className="initial-home-btn">
               <Link to="/" className="link">
                   <span className="initial-tag">AM</span>
               </Link>
         </div>
         <MainPage />
+        <div className="bottom-line"></div>
       </>
 
     );

@@ -6,9 +6,8 @@ keyframes & animations
 */
 .main-page {
   display: grid;
-  grid-template-columns: 50px 90px 120px;
-  border-bottom: 1px solid black;
-  margin-top: 10rem;
+  grid-template-columns: minmax(auto, 50%) 1fr 3em;
+  margin-top: 10%;
   min-height: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
@@ -28,8 +27,14 @@ keyframes & animations
   -ms-font-weight: 400;
   animation: fade-in-down 1.5s ease;
 }
+.main-page .main-page-info {
+  width: 10%;
+}
 .main-page .aside-left {
-  text-align: center;
+  display: flex;
+  gap: 3px;
+  justify-content: space-evenly;
+  width: 80%;
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -42,15 +47,15 @@ keyframes & animations
 }
 .main-page .aside-left h1 {
   font-family: "Quicksand";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #000000;
   font-weight: 400;
   -webkit-font-family: "Quicksand";
   -moz-font-family: "Quicksand";
   -ms-font-family: "Quicksand";
-  -webkit-font-size: 1.3rem;
-  -moz-font-size: 1.3rem;
-  -ms-font-size: 1.3rem;
+  -webkit-font-size: 1.2rem;
+  -moz-font-size: 1.2rem;
+  -ms-font-size: 1.2rem;
   -webkit-color: #000000;
   -moz-color: #000000;
   -ms-color: #000000;
@@ -58,8 +63,18 @@ keyframes & animations
   -moz-font-weight: 400;
   -ms-font-weight: 400;
 }
-.main-page .bottom-line {
-  width: 100%;
+
+.bottom-line {
+  width: 100vw;
+  position: relative;
+  height: 1px;
+  background-color: #000000;
+}
+
+.aside-line {
+  width: 100vw;
+  position: absolute;
+  left: -40%;
   height: 1px;
   background-color: #000000;
   transform: rotate(-90deg);
