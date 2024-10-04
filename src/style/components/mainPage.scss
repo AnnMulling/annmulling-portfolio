@@ -3,49 +3,36 @@
 
 
 .main-page {
+    padding-top: 5%;
     display: grid;
-    grid-template-columns: minmax(auto, 50%) 1fr 3em;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr;
     margin-top: 10%;
-    min-height: 100%;
+    height: 100%;
     @include font($title-font, 4rem, $base-black);
     @include animations('fade-in-down 1.5s ease');
+    margin-bottom: 10rem;
 
     .main-page-info {
-        width: 10%;
+        width: 100%;
     }
-
 
     //left titile
     .aside-left {
-    display: flex;
-    gap: 3px;
-    justify-content: space-evenly;
-
-    width: 80%;
-    h1 {
-        @include font($detail-font, 1.2rem, $base-black);
-    }
-    @include transform(rotate(-90deg));
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 120%;
+        .aside-text {
+            @include font($detail-font, 30%, $base-black);
+        }
+        @include transform(rotate(-90deg));
 
     }
 
 }
 
-.bottom-line {
-    width: 100vw;
-    position: relative;
-    height: 1px;
-    background-color: $base-black;
-  }
 
-  .aside-line {
-    width: 100vw;
-    position: absolute;
-    left: -40%;
-    height: 1px;
-    background-color: $base-black;
-    @include transform(rotate(-90deg));
-  }
 
 
 //every element

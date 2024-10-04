@@ -24,6 +24,7 @@ export default function Root() {
         </div>
         <MainPage />
         <div className="bottom-line"></div>
+        <AboutMe />
       </>
 
     );

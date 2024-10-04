@@ -7,21 +7,17 @@ import '../../style/components/mainPage.css';
 export default function MainPage() {
 
     return (
-            <>
-                {/* <div className="aside-line"></div> */}
-                <div className="main-page">
-                    <div className="aside-left">
-                        <h1> A Junior Software Engineer</h1>
-                        <h1> Chicago, IL</h1>
-                    </div>
-                    <div className="main-page-info">
-                        <h1>Ann Mulling</h1>
-                    </div>
-                    {/* <SocialTag /> */}
-                </div>
-                {/* <div className="bottom-line"></div> */}
-            </>
 
+        <div className="main-page">
+            <div className="aside-left">
+                <span className="aside-text"> A Junior Software Engineer</span>
+                <span className="aside-text"> 📍Chicago, IL</span>
+            </div>
+            <div className="main-page-info">
+                <h1>👩🏻 Ann Mulling</h1>
+            </div>
+            {/* <SocialTag /> */}
+        </div>
 
     )
 }

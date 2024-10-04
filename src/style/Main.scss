@@ -28,6 +28,22 @@ html {
 
 }
 
+.bottom-line {
+    width: 100vw;
+    position: absolute;
+    height: 1px;
+    background-color: $base-black;
+  }
+
+  .aside-line {
+    width: 100%;
+    position: absolute;
+    left: -40%;
+    height: 1px;
+    background-color: $base-black;
+    @include transform(rotate(-90deg));
+  }
+
 
 .initial-home-btn {
     top: 5%;
