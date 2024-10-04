@@ -5,7 +5,7 @@
 keyframes & animations
 */
 .about-me-page {
-  margin-left: 10%;
+  padding-left: 4%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 3%;
@@ -60,8 +60,8 @@ keyframes & animations
   -ms-font-weight: 400;
 }
 .about-me-page .about-img {
-  height: 650px;
-  width: 80%;
+  height: 600px;
+  width: 70%;
   margin-left: 10%;
 }
 .about-me-page .about-img img {
