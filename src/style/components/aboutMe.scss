@@ -4,121 +4,40 @@
 
 
 .about-me-page {
-    display: flex;
-    width: 100%;
-
-    .about-img {
-        position: relative;
-        height: 750px;
-        width: 50%;
-        margin: 1rem 3rem;
-        // background: $base-grey;
-        // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
-        // transform: rotate(2.5deg);
-        img {
-            height: 100%;
-            width: 100%;
-
-        }
-    }
-    .about-detail {
-        padding: 5rem;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    .about-info {
+        padding: .5rem 2rem;
+        border-right: 1px solid black;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 90%;
+        text-align: justify;
         @include font($detail-font, 1.2rem, $base-black);
-
         .about-title {
-            text-align: right;
+            text-align: center;
             border-bottom: 1px solid black;
             width: 100%;
             h1 {
-                @include font($title-font, 5.5rem, $base-black)
-            }
-
+                @include font($title-font, 5rem, $base-black)
         }
+    }
 
-        .about-info {
-            padding-right: 3rem;
+    }
+    .about-img {
+        height: 650px;
+        width: 80%;
+        margin-left: 10%;
+        // background: $base-grey;
+        // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+        img {
+            height: 100%;
             width: 100%;
-            text-align: justify;
-
         }
 
-
-
-        // .qualification-box {
-        //     width: 100%;
-        //     padding: 10px;
-        //     margin-top: 4rem;
-        //     display: flex;
-        //     align-items: center;
-        //     gap: 10px;
-        //     .arrow {
-        //         font-size: 10rem;
-        //         margin: 0 .5rem;
-        //         cursor:pointer;
-        //         opacity: 70%;
-        //         &:hover {
-        //             opacity: 100%;
-        //         }
-        //     }
-
-        //     #slide {
-
-        //         display: flex;
-        //         overflow-x: scroll;
-        //         scroll-behavior: smooth;
-        //         margin: 0 1rem;
-        //         padding: .5rem;
-        //         -webkit-scrollbar: none;
-        //         -ms-overflow-style: none;
-        //         scrollbar-width: none;
-
-        //         .counter-box {
-        //             margin: 0 10px;
-        //             background: #fff;
-        //             border-radius: 10px;
-        //             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        //             white-space: nowrap;
-        //             line-height: 3;
-        //             cursor: pointer;
-        //             transition: all 300ms ease-in-out;
-        //             &:hover {
-        //                 transform: scale(1.05);
-        //                 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        //             }
-        //             .counter-detail {
-        //                 width: 200px;
-        //                 padding: 0.5rem;
-        //                 text-transform: capitalize;
-        //                 display: flex;
-        //                 flex-direction: column;
-        //                 align-items: center;
-
-        //                 .counter-icon {
-        //                     font-size: 2rem
-        //                 }
-        //                 @include font($detail-font, 1rem, $base-green);
-        //             }
-        //         }
-        //     }
-
-        //     h2 {
-        //         width: 100%;
-        //         @include font($title-font, 2rem, $base-green);
-        //     }
-        // }
     }
-
-    .info-divider {
-        margin-left: 50%;
-        border-left: 1px solid black;
-        height: 100%;
-        position: absolute;
-        z-index: 2;
-    }
-
-
     @include animations('fade-in-down 1.5s ease');
 }

@@ -17,14 +17,18 @@ export default function Root() {
     return (
       <>
         <div className="aside-line"></div>
-        <div className="initial-home-btn">
-              <Link to="/" className="link">
-                  <span className="initial-tag">AM</span>
-              </Link>
-        </div>
-        <MainPage />
+        <Swiper className="mySwiper">
+          <div className="initial-home-btn">
+                <Link to="/" className="link">
+                    <span className="initial-tag">AM</span>
+                </Link>
+          </div>
+          <SwiperSlide><MainPage /></SwiperSlide>
+          <SwiperSlide><AboutMe/></SwiperSlide>
+
+
+        </Swiper>
         <div className="bottom-line"></div>
-        <AboutMe />
       </>
 
     );

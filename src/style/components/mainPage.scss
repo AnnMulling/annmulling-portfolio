@@ -11,8 +11,6 @@
     height: 100%;
     @include font($title-font, 4rem, $base-black);
     @include animations('fade-in-down 1.5s ease');
-    margin-bottom: 10rem;
-
     .main-page-info {
         width: 100%;
     }
