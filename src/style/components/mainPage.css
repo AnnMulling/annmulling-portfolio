@@ -5,11 +5,8 @@
 keyframes & animations
 */
 .main-page {
-  padding-top: 5%;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 3fr;
-  margin-top: 10%;
+  margin-top: 20%;
+  text-align: center;
   height: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
@@ -31,39 +28,6 @@ keyframes & animations
 }
 .main-page .main-page-info {
   width: 100%;
-}
-.main-page .aside-left {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  width: 120%;
-  transform: rotate(-90deg);
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
-}
-.main-page .aside-left .aside-text {
-  font-family: "Quicksand";
-  font-size: 30%;
-  color: #000000;
-  font-weight: 400;
-  -webkit-font-family: "Quicksand";
-  -moz-font-family: "Quicksand";
-  -ms-font-family: "Quicksand";
-  -webkit-font-size: 30%;
-  -moz-font-size: 30%;
-  -ms-font-size: 30%;
-  -webkit-color: #000000;
-  -moz-color: #000000;
-  -ms-color: #000000;
-  -webkit-font-weight: 400;
-  -moz-font-weight: 400;
-  -ms-font-weight: 400;
 }
 @keyframes fade-in-down {
   from {

@@ -23,40 +23,21 @@ html {
   color: inherit;
 }
 
-.mySwiper {
-  padding: 2rem;
-}
-
 .bottom-line {
-  bottom: 10%;
-  left: -1%;
-  width: 120%;
-  position: absolute;
-  height: 1px;
-  background-color: #000000;
-}
-
-.aside-line {
-  top: 10%;
+  z-index: 1000;
+  bottom: 0%;
+  border-top: 1px solid #000000;
+  left: 0%;
   width: 100%;
   position: absolute;
-  left: -40%;
-  height: 1px;
+  height: 50px;
   background-color: #000000;
-  transform: rotate(-90deg);
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
 }
 
 .initial-home-btn {
+  z-index: 2000;
   top: 5%;
-  left: 3%;
+  left: 2%;
   position: fixed;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;

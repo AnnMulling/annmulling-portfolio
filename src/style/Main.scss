@@ -25,35 +25,42 @@ html {
 
 }
 
-.mySwiper {
-    padding: 2rem;
-}
-
 
 
 .bottom-line {
-    bottom: 10%;
-    left: -1%;
-    width: 120%;
+    z-index: 1000;
+    bottom: 0%;
+    border-top: 1px solid $base-black;
+    left: 0%;
+    width: 100%;
     position: absolute;
-    height: 1px;
+    height: 50px;
     background-color: $base-black;
   }
 
-  .aside-line {
-    top: 10%;
-    width: 100%;
-    position: absolute;
-    left: -40%;
-    height: 1px;
-    background-color: $base-black;
-    @include transform(rotate(-90deg));
-  }
+//   .aside-line {
+
+//     z-index: 1001;
+//     // top: 10%;
+//     // width: 100%;
+//     // position: absolute;
+//     left: -50%;
+//     border-bottom: 1px solid $base-black;
+//     // height: 34%;
+//     // background-color: $backgroud;
+
+//     @include transform(rotate(-90deg));
+
+
+
+
+//   }
 
 
 .initial-home-btn {
+    z-index: 2000;
     top: 5%;
-    left: 3%;
+    left: 2%;
     position: fixed;
     cursor: pointer;
     @include font($title-font, 2rem, $base-white);
