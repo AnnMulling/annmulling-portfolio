@@ -3,31 +3,35 @@
 
 
 .main-page {
-    display: grid;
-    grid-template-columns: 50px 90px 120px;
-    border-bottom: 1px solid black;
-    margin-top: 10rem;
-    min-height: 100%;
+    margin-top: 20%;
+    text-align: center;
+    // display: grid;
+    // grid-template-rows: auto;
+    // grid-template-columns: 1fr 3fr;
+    height: 100%;
     @include font($title-font, 4rem, $base-black);
     @include animations('fade-in-down 1.5s ease');
 
+    .main-page-info {
+        width: 100%;
+    }
 
     //left titile
-    .aside-left {
-      text-align: center;
-      h1 {
-          @include font($detail-font, 1.3rem, $base-black);
-      }
-      @include transform(rotate(-90deg));
+    // .aside-left {
+    //     z-index: 2000;
+    //     display: flex;
+    //     justify-content: flex-start;
+    //     gap: 20px;
+    //     width: 120%;
+    //     .aside-text {
+    //         @include font($detail-font, 30%, $base-black);
+    //     }
+    //     @include transform(rotate(-90deg));
 
-    }
-    .bottom-line {
-      width: 100%;
-      height: 1px;
-      background-color: $base-black;
-      @include transform(rotate(-90deg));
-    }
+    // }
+
 }
+
 
 
 

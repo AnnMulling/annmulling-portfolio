@@ -5,25 +5,20 @@
 keyframes & animations
 */
 .about-me-page {
-  display: flex;
-  width: 100%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3%;
   animation: fade-in-down 1.5s ease;
 }
-.about-me-page .about-img {
-  position: relative;
-  height: 750px;
-  width: 50%;
-  margin: 1rem 3rem;
-}
-.about-me-page .about-img img {
+.about-me-page .about-info {
+  padding: 0.5rem 2rem;
+  border-right: 1px solid black;
   height: 100%;
-  width: 100%;
-}
-.about-me-page .about-detail {
-  padding: 5rem;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 90%;
+  text-align: justify;
   font-family: "Quicksand";
   font-size: 1.2rem;
   color: #000000;
@@ -41,22 +36,22 @@ keyframes & animations
   -moz-font-weight: 400;
   -ms-font-weight: 400;
 }
-.about-me-page .about-detail .about-title {
-  text-align: right;
+.about-me-page .about-info .about-title {
+  text-align: center;
   border-bottom: 1px solid black;
   width: 100%;
 }
-.about-me-page .about-detail .about-title h1 {
+.about-me-page .about-info .about-title h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 5.5rem;
+  font-size: 5rem;
   color: #000000;
   font-weight: 400;
   -webkit-font-family: "Open Sans", sans-serif;
   -moz-font-family: "Open Sans", sans-serif;
   -ms-font-family: "Open Sans", sans-serif;
-  -webkit-font-size: 5.5rem;
-  -moz-font-size: 5.5rem;
-  -ms-font-size: 5.5rem;
+  -webkit-font-size: 5rem;
+  -moz-font-size: 5rem;
+  -ms-font-size: 5rem;
   -webkit-color: #000000;
   -moz-color: #000000;
   -ms-color: #000000;
@@ -64,15 +59,12 @@ keyframes & animations
   -moz-font-weight: 400;
   -ms-font-weight: 400;
 }
-.about-me-page .about-detail .about-info {
-  padding-right: 3rem;
-  width: 100%;
-  text-align: justify;
+.about-me-page .about-img {
+  height: 650px;
+  width: 80%;
+  margin-left: 10%;
 }
-.about-me-page .info-divider {
-  margin-left: 50%;
-  border-left: 1px solid black;
+.about-me-page .about-img img {
   height: 100%;
-  position: absolute;
-  z-index: 2;
+  width: 100%;
 }/*# sourceMappingURL=aboutMe.css.map */

@@ -23,9 +23,21 @@ html {
   color: inherit;
 }
 
+.bottom-line {
+  z-index: 1000;
+  bottom: 0%;
+  border-top: 1px solid #000000;
+  left: 0%;
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  background-color: #000000;
+}
+
 .initial-home-btn {
+  z-index: 2000;
   top: 5%;
-  left: 3%;
+  left: 2%;
   position: fixed;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
